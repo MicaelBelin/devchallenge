@@ -1,0 +1,2048 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevChallenge.Server.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DevChallenge.Server.Fakes.ShimExtensions">
+            <summary>Shim type of DevChallenge.Server.Extensions</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.DeserializedOf1XElement``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Xml.Linq.XElement,``0})">
+            <summary>Sets the shim of Extensions.Deserialized(XElement e)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Fakes.ShimProgram">
+            <summary>Shim type of DevChallenge.Server.Program</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimProgram.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimProgram.#ctor(DevChallenge.Server.Program)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimProgram.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.ShimProgram.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.Constructor">
+            <summary>Sets the shim of Program.Program()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.LoadChallengesDirectoryInfo">
+            <summary>Sets the shim of Program.LoadChallenges(DirectoryInfo path)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.Run">
+            <summary>Sets the shim of Program.Run()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.StaticConstructor">
+            <summary>Sets the shim of Program.Program()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__0FileInfo">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__0(FileInfo x)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__1FileInfo">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__1(FileInfo x)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__2Assembly">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__2(Assembly assembly)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__3Type">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__3(Type x)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__4Type">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__4(Type x)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._Runb__dIAgent">
+            <summary>Sets the shim of Program.&lt;Run&gt;b__d(IAgent agent)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Fakes.ShimProgram.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Fakes.StubProgram">
+            <summary>Stub type of DevChallenge.Server.Program</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.StubProgram.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Fakes.StubProgram.InitializeStub">
+            <summary>Initializes a new instance of type StubProgram</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.StubProgram.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.StubProgram.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.StubProgram.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimAgent">
+            <summary>Shim type of DevChallenge.Server.Implementation.Agent</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimAgent.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimAgent.#ctor(DevChallenge.Server.Implementation.Agent)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimAgent.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimAgent.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimAgent.Bind(DevChallenge.Server.Model.IAgent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.ConnectionGet">
+            <summary>Sets the shim of Agent.get_Connection()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.ConnectionSetIConnection">
+            <summary>Sets the shim of Agent.set_Connection(IConnection value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.ConstructorIConnectionIUserStringInt32">
+            <summary>Sets the shim of Agent.Agent(IConnection connection, IUser user, String name, Int32 revision)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.NameGet">
+            <summary>Sets the shim of Agent.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.NameSetString">
+            <summary>Sets the shim of Agent.set_Name(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.OwnerGet">
+            <summary>Sets the shim of Agent.get_Owner()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.OwnerSetIUser">
+            <summary>Sets the shim of Agent.set_Owner(IUser value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.RevisionGet">
+            <summary>Sets the shim of Agent.get_Revision()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.RevisionSetInt32">
+            <summary>Sets the shim of Agent.set_Revision(Int32 value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.ConnectionGet">
+            <summary>Sets the shim of Agent.get_Connection()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.ConnectionSetIConnection">
+            <summary>Sets the shim of Agent.set_Connection(IConnection value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.NameGet">
+            <summary>Sets the shim of Agent.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.NameSetString">
+            <summary>Sets the shim of Agent.set_Name(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.OwnerGet">
+            <summary>Sets the shim of Agent.get_Owner()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.OwnerSetIUser">
+            <summary>Sets the shim of Agent.set_Owner(IUser value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.RevisionGet">
+            <summary>Sets the shim of Agent.get_Revision()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimAgent.AllInstances.RevisionSetInt32">
+            <summary>Sets the shim of Agent.set_Revision(Int32 value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimContext">
+            <summary>Shim type of DevChallenge.Server.Implementation.Context</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimContext.#ctor(DevChallenge.Server.Implementation.Context)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimContext.Bind(DevChallenge.Server.Model.IContext)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AddEntryPointIAgentEntryPoint">
+            <summary>Sets the shim of Context.AddEntryPoint(IAgentEntryPoint ep)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.ConstructorIScenarioManagerIEnumerableOfIAgentEntryPoint">
+            <summary>Sets the shim of Context.Context(IScenarioManager scenariomanager, IEnumerable`1&lt;IAgentEntryPoint&gt; entrypoints)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.EntryPointsGet">
+            <summary>Sets the shim of Context.get_EntryPoints()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.RemoveEntryPointIAgentEntryPoint">
+            <summary>Sets the shim of Context.RemoveEntryPoint(IAgentEntryPoint ep)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.ScenarioManagerGet">
+            <summary>Sets the shim of Context.get_ScenarioManager()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.AddEntryPointIAgentEntryPoint">
+            <summary>Sets the shim of Context.AddEntryPoint(IAgentEntryPoint ep)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.EntryPointsGet">
+            <summary>Sets the shim of Context.get_EntryPoints()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.RemoveEntryPointIAgentEntryPoint">
+            <summary>Sets the shim of Context.RemoveEntryPoint(IAgentEntryPoint ep)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.ScenarioManagerGet">
+            <summary>Sets the shim of Context.get_ScenarioManager()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimLogManager">
+            <summary>Shim type of DevChallenge.Server.Implementation.LogManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimLogManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimLogManager.#ctor(DevChallenge.Server.Implementation.LogManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimLogManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimLogManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimLogManager.Bind(DevChallenge.Server.Model.IScenarioLogFactory)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.ConstructorDevChallengeDataContext">
+            <summary>Sets the shim of LogManager.LogManager(DevChallengeDataContext DataContext)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.CreateIScenario">
+            <summary>Sets the shim of LogManager.Create(IScenario scenario)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.DataContextGet">
+            <summary>Sets the shim of LogManager.get_DataContext()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.DataContextSetDevChallengeDataContext">
+            <summary>Sets the shim of LogManager.set_DataContext(DevChallengeDataContext value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.WorkerDispatcherGet">
+            <summary>Sets the shim of LogManager.get_WorkerDispatcher()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.WorkerDispatcherSetDispatcher">
+            <summary>Sets the shim of LogManager.set_WorkerDispatcher(Dispatcher value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimLogManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.AllInstances.CreateIScenario">
+            <summary>Sets the shim of LogManager.Create(IScenario scenario)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.AllInstances.DataContextGet">
+            <summary>Sets the shim of LogManager.get_DataContext()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.AllInstances.DataContextSetDevChallengeDataContext">
+            <summary>Sets the shim of LogManager.set_DataContext(DevChallengeDataContext value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.AllInstances.WorkerDispatcherGet">
+            <summary>Sets the shim of LogManager.get_WorkerDispatcher()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimLogManager.AllInstances.WorkerDispatcherSetDispatcher">
+            <summary>Sets the shim of LogManager.set_WorkerDispatcher(Dispatcher value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager">
+            <summary>Shim type of DevChallenge.Server.Implementation.ScenarioManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.#ctor(DevChallenge.Server.Implementation.ScenarioManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.Bind(DevChallenge.Server.Model.IScenarioManager)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AddAgentIAgent">
+            <summary>Sets the shim of ScenarioManager.AddAgent(IAgent agent)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AddScenarioIScenario">
+            <summary>Sets the shim of ScenarioManager.AddScenario(IScenario scenario)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.Constructor">
+            <summary>Sets the shim of ScenarioManager.ScenarioManager()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.LoadFromDb">
+            <summary>Sets the shim of ScenarioManager.LoadFromDb()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.RemoveScenarioIScenario">
+            <summary>Sets the shim of ScenarioManager.RemoveScenario(IScenario scenario)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.ScenarioAddedAddActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.add_ScenarioAdded(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.ScenarioAddedRemoveActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.remove_ScenarioAdded(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.ScenarioRemovedAddActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.add_ScenarioRemoved(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.ScenarioRemovedRemoveActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.remove_ScenarioRemoved(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.ScenariosGet">
+            <summary>Sets the shim of ScenarioManager.get_Scenarios()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager._AddAgentb__3IScenario">
+            <summary>Sets the shim of ScenarioManager.&lt;AddAgent&gt;b__3(IScenario x)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.AddAgentIAgent">
+            <summary>Sets the shim of ScenarioManager.AddAgent(IAgent agent)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.AddScenarioIScenario">
+            <summary>Sets the shim of ScenarioManager.AddScenario(IScenario scenario)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.LoadFromDb">
+            <summary>Sets the shim of ScenarioManager.LoadFromDb()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.RemoveScenarioIScenario">
+            <summary>Sets the shim of ScenarioManager.RemoveScenario(IScenario scenario)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.ScenarioAddedAddActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.add_ScenarioAdded(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.ScenarioAddedRemoveActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.remove_ScenarioAdded(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.ScenarioRemovedAddActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.add_ScenarioRemoved(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.ScenarioRemovedRemoveActionOfIScenario">
+            <summary>Sets the shim of ScenarioManager.remove_ScenarioRemoved(Action`1&lt;IScenario&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.AllInstances.ScenariosGet">
+            <summary>Sets the shim of ScenarioManager.get_Scenarios()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario">
+            <summary>Shim type of DevChallenge.Server.Implementation.SingleUserScenario</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.#ctor(DevChallenge.Server.Implementation.SingleUserScenario)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.Bind(DevChallenge.Server.Model.IScenario)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AddAgentIAgentXElement">
+            <summary>Sets the shim of SingleUserScenario.AddAgent(IAgent agent, XElement parameters)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.CodeGet">
+            <summary>Sets the shim of SingleUserScenario.get_Code()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.CodeSetString">
+            <summary>Sets the shim of SingleUserScenario.set_Code(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.ConstructorStringIScenarioLogFactoryStringString">
+            <summary>Sets the shim of SingleUserScenario.SingleUserScenario(String name, IScenarioLogFactory factory, String description, String code)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.DescriptionGet">
+            <summary>Sets the shim of SingleUserScenario.get_Description()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.DescriptionSetString">
+            <summary>Sets the shim of SingleUserScenario.set_Description(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.InstanceAddedAddActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.add_InstanceAdded(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.InstanceAddedRemoveActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.remove_InstanceAdded(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.InstanceRemovedAddActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.add_InstanceRemoved(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.InstanceRemovedRemoveActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.remove_InstanceRemoved(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.InstancesGet">
+            <summary>Sets the shim of SingleUserScenario.get_Instances()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.LogGet">
+            <summary>Sets the shim of SingleUserScenario.get_Log()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.NameGet">
+            <summary>Sets the shim of SingleUserScenario.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.NameSetString">
+            <summary>Sets the shim of SingleUserScenario.set_Name(String value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.AddAgentIAgentXElement">
+            <summary>Sets the shim of SingleUserScenario.AddAgent(IAgent agent, XElement parameters)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.CodeGet">
+            <summary>Sets the shim of SingleUserScenario.get_Code()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.CodeSetString">
+            <summary>Sets the shim of SingleUserScenario.set_Code(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.DescriptionGet">
+            <summary>Sets the shim of SingleUserScenario.get_Description()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of SingleUserScenario.set_Description(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.InstanceAddedAddActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.add_InstanceAdded(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.InstanceAddedRemoveActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.remove_InstanceAdded(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.InstanceRemovedAddActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.add_InstanceRemoved(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.InstanceRemovedRemoveActionOfIInstance">
+            <summary>Sets the shim of SingleUserScenario.remove_InstanceRemoved(Action`1&lt;IInstance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.InstancesGet">
+            <summary>Sets the shim of SingleUserScenario.get_Instances()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.LogGet">
+            <summary>Sets the shim of SingleUserScenario.get_Log()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.NameGet">
+            <summary>Sets the shim of SingleUserScenario.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenario.AllInstances.NameSetString">
+            <summary>Sets the shim of SingleUserScenario.set_Name(String value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate">
+            <summary>Shim type of DevChallenge.Server.Implementation.SingleUserScenarioDelegate</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.#ctor(DevChallenge.Server.Implementation.SingleUserScenarioDelegate)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.Bind(DevChallenge.Server.Model.IScenario)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ConstructorStringIScenarioLogFactoryStringString">
+            <summary>Sets the shim of SingleUserScenarioDelegate.SingleUserScenarioDelegate(String name, IScenarioLogFactory factory, String description, String code)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteDelegateGet">
+            <summary>Sets the shim of SingleUserScenarioDelegate.get_ExecuteDelegate()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteDelegateSetActionOfIAgentIInstanceLogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.set_ExecuteDelegate(Action`3&lt;IAgent,IInstanceLog,XElement&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteIAgentIInstanceLogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteDelegateGet">
+            <summary>Sets the shim of SingleUserScenarioDelegate.get_ExecuteDelegate()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteDelegateSetActionOfIAgentIInstanceLogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.set_ExecuteDelegate(Action`3&lt;IAgent,IInstanceLog,XElement&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteIAgentIInstanceLogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimTcpServer">
+            <summary>Shim type of DevChallenge.Server.Implementation.TcpServer</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.#ctor(DevChallenge.Server.Implementation.TcpServer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.Bind(DevChallenge.Server.Model.IAgentEntryPoint)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AgentSpawnedAddActionOfIAgent">
+            <summary>Sets the shim of TcpServer.add_AgentSpawned(Action`1&lt;IAgent&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AgentSpawnedRemoveActionOfIAgent">
+            <summary>Sets the shim of TcpServer.remove_AgentSpawned(Action`1&lt;IAgent&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.ConstructorInt32String">
+            <summary>Sets the shim of TcpServer.TcpServer(Int32 port, String connectionstring)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.Exec">
+            <summary>Sets the shim of TcpServer.Exec()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.HandleClientTcpClient">
+            <summary>Sets the shim of TcpServer.HandleClient(TcpClient client)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AllInstances.AgentSpawnedAddActionOfIAgent">
+            <summary>Sets the shim of TcpServer.add_AgentSpawned(Action`1&lt;IAgent&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AllInstances.AgentSpawnedRemoveActionOfIAgent">
+            <summary>Sets the shim of TcpServer.remove_AgentSpawned(Action`1&lt;IAgent&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AllInstances.Exec">
+            <summary>Sets the shim of TcpServer.Exec()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AllInstances.HandleClientTcpClient">
+            <summary>Sets the shim of TcpServer.HandleClient(TcpClient client)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimUser">
+            <summary>Shim type of DevChallenge.Server.Implementation.User</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUser.#ctor(DevChallenge.Server.Implementation.User)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUser.Bind(DevChallenge.Server.Model.IUser)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.ChangePasswordString">
+            <summary>Sets the shim of User.ChangePassword(String pw)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.ConstructorUserDevChallengeDataContext">
+            <summary>Sets the shim of User.User(User user, DevChallengeDataContext datacontext)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.DataContextGet">
+            <summary>Sets the shim of User.get_DataContext()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.DataContextSetDevChallengeDataContext">
+            <summary>Sets the shim of User.set_DataContext(DevChallengeDataContext value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.EmailGet">
+            <summary>Sets the shim of User.get_Email()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.EmailSetString">
+            <summary>Sets the shim of User.set_Email(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.FullNameGet">
+            <summary>Sets the shim of User.get_FullName()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.FullNameSetString">
+            <summary>Sets the shim of User.set_FullName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.IdGet">
+            <summary>Sets the shim of User.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.UserNameGet">
+            <summary>Sets the shim of User.get_UserName()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.UserNameSetString">
+            <summary>Sets the shim of User.set_UserName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.VerifyPasswordString">
+            <summary>Sets the shim of User.VerifyPassword(String pw)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.ChangePasswordString">
+            <summary>Sets the shim of User.ChangePassword(String pw)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.DataContextGet">
+            <summary>Sets the shim of User.get_DataContext()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.DataContextSetDevChallengeDataContext">
+            <summary>Sets the shim of User.set_DataContext(DevChallengeDataContext value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.EmailGet">
+            <summary>Sets the shim of User.get_Email()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.EmailSetString">
+            <summary>Sets the shim of User.set_Email(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.FullNameGet">
+            <summary>Sets the shim of User.get_FullName()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.FullNameSetString">
+            <summary>Sets the shim of User.set_FullName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.IdGet">
+            <summary>Sets the shim of User.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.UserNameGet">
+            <summary>Sets the shim of User.get_UserName()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.UserNameSetString">
+            <summary>Sets the shim of User.set_UserName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUser.AllInstances.VerifyPasswordString">
+            <summary>Sets the shim of User.VerifyPassword(String pw)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimUserManager">
+            <summary>Shim type of DevChallenge.Server.Implementation.UserManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUserManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUserManager.#ctor(DevChallenge.Server.Implementation.UserManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUserManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUserManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimUserManager.Bind(DevChallenge.Server.Model.IUserManager)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.ConstructorDevChallengeDataContext">
+            <summary>Sets the shim of UserManager.UserManager(DevChallengeDataContext DataContext)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.CreateStringStringStringString">
+            <summary>Sets the shim of UserManager.Create(String Username, String password, String FullName, String Email)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.GetInt32">
+            <summary>Sets the shim of UserManager.Get(Int32 UserId)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.GetStringString">
+            <summary>Sets the shim of UserManager.Get(String Username, String password)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.RegisterUserCommandsIConnection">
+            <summary>Sets the shim of UserManager.RegisterUserCommands(IConnection connection)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.ShimUserManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.AllInstances.CreateStringStringStringString">
+            <summary>Sets the shim of UserManager.Create(String Username, String password, String FullName, String Email)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.AllInstances.GetInt32">
+            <summary>Sets the shim of UserManager.Get(Int32 UserId)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.AllInstances.GetStringString">
+            <summary>Sets the shim of UserManager.Get(String Username, String password)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimUserManager.AllInstances.RegisterUserCommandsIConnection">
+            <summary>Sets the shim of UserManager.RegisterUserCommands(IConnection connection)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubAgent">
+            <summary>Stub type of DevChallenge.Server.Implementation.Agent</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubAgent.#ctor(DevChallenge.IConnection,DevChallenge.Server.Model.IUser,System.String,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubAgent.InitializeStub">
+            <summary>Initializes a new instance of type StubAgent</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubAgent.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubAgent.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubAgent.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubContext">
+            <summary>Stub type of DevChallenge.Server.Implementation.Context</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubContext.#ctor(DevChallenge.Server.Model.IScenarioManager,System.Collections.Generic.IEnumerable{DevChallenge.Server.Model.IAgentEntryPoint})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubContext.InitializeStub">
+            <summary>Initializes a new instance of type StubContext</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubLogManager">
+            <summary>Stub type of DevChallenge.Server.Implementation.LogManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubLogManager.#ctor(DevChallenge.Server.db.DevChallengeDataContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubLogManager.InitializeStub">
+            <summary>Initializes a new instance of type StubLogManager</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubLogManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubLogManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubLogManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubScenarioManager">
+            <summary>Stub type of DevChallenge.Server.Implementation.ScenarioManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.InitializeStub">
+            <summary>Initializes a new instance of type StubScenarioManager</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario">
+            <summary>Stub type of DevChallenge.Server.Implementation.SingleUserScenario</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.#ctor(System.String,DevChallenge.Server.Model.IScenarioLogFactory,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.Execute(DevChallenge.Server.Model.IAgent,DevChallenge.Server.Model.IInstanceLog,System.Xml.Linq.XElement)">
+            <summary>Sets the stub of SingleUserScenario.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.ExecuteIAgentIInstanceLogXElement">
+            <summary>Sets the stub of SingleUserScenario.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.InitializeStub">
+            <summary>Initializes a new instance of type StubSingleUserScenario</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate">
+            <summary>Stub type of DevChallenge.Server.Implementation.SingleUserScenarioDelegate</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.#ctor(System.String,DevChallenge.Server.Model.IScenarioLogFactory,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.Execute(DevChallenge.Server.Model.IAgent,DevChallenge.Server.Model.IInstanceLog,System.Xml.Linq.XElement)">
+            <summary>Sets the stub of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.ExecuteIAgentIInstanceLogXElement">
+            <summary>Sets the stub of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.InitializeStub">
+            <summary>Initializes a new instance of type StubSingleUserScenarioDelegate</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubTcpServer">
+            <summary>Stub type of DevChallenge.Server.Implementation.TcpServer</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubTcpServer.#ctor(System.Int32,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubTcpServer.InitializeStub">
+            <summary>Initializes a new instance of type StubTcpServer</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubTcpServer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubTcpServer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubTcpServer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubUser">
+            <summary>Stub type of DevChallenge.Server.Implementation.User</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubUser.#ctor(DevChallenge.Server.db.User,DevChallenge.Server.db.DevChallengeDataContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubUser.InitializeStub">
+            <summary>Initializes a new instance of type StubUser</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Implementation.Fakes.StubUserManager">
+            <summary>Stub type of DevChallenge.Server.Implementation.UserManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubUserManager.#ctor(DevChallenge.Server.db.DevChallengeDataContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubUserManager.InitializeStub">
+            <summary>Initializes a new instance of type StubUserManager</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubUserManager.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubUserManager.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.StubUserManager.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIAgent">
+            <summary>Stub type of DevChallenge.Server.Model.IAgent</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIAgent.#ctor">
+            <summary>Initializes a new instance of type StubIAgent</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIAgent.ConnectionGet">
+            <summary>Sets the stub of IAgent.get_Connection()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIAgent.NameGet">
+            <summary>Sets the stub of IAgent.get_Name()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIAgent.OwnerGet">
+            <summary>Sets the stub of IAgent.get_Owner()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIAgent.RevisionGet">
+            <summary>Sets the stub of IAgent.get_Revision()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIAgent.dcs::DevChallenge#Server#Model#IAgent#Connection">
+            <summary>Sets the stub of IAgent.get_Connection()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIAgent.dcs::DevChallenge#Server#Model#IAgent#Name">
+            <summary>Sets the stub of IAgent.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIAgent.dcs::DevChallenge#Server#Model#IAgent#Owner">
+            <summary>Sets the stub of IAgent.get_Owner()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIAgent.dcs::DevChallenge#Server#Model#IAgent#Revision">
+            <summary>Sets the stub of IAgent.get_Revision()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIAgentEntryPoint">
+            <summary>Stub type of DevChallenge.Server.Model.IAgentEntryPoint</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIAgentEntryPoint.#ctor">
+            <summary>Initializes a new instance of type StubIAgentEntryPoint</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIContext">
+            <summary>Stub type of DevChallenge.Server.Model.IContext</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIContext.#ctor">
+            <summary>Initializes a new instance of type StubIContext</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIContext.EntryPointsGet">
+            <summary>Sets the stub of IContext.get_EntryPoints()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIContext.ScenarioManagerGet">
+            <summary>Sets the stub of IContext.get_ScenarioManager()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIContext.dcs::DevChallenge#Server#Model#IContext#EntryPoints">
+            <summary>Sets the stub of IContext.get_EntryPoints()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIContext.dcs::DevChallenge#Server#Model#IContext#ScenarioManager">
+            <summary>Sets the stub of IContext.get_ScenarioManager()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIInstance">
+            <summary>Stub type of DevChallenge.Server.Model.IInstance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstance.#ctor">
+            <summary>Initializes a new instance of type StubIInstance</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstance.AgentsGet">
+            <summary>Sets the stub of IInstance.get_Agents()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstance.LogGet">
+            <summary>Sets the stub of IInstance.get_Log()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstance.ScenarioGet">
+            <summary>Sets the stub of IInstance.get_Scenario()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIInstance.dcs::DevChallenge#Server#Model#IInstance#Agents">
+            <summary>Sets the stub of IInstance.get_Agents()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIInstance.dcs::DevChallenge#Server#Model#IInstance#Log">
+            <summary>Sets the stub of IInstance.get_Log()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIInstance.dcs::DevChallenge#Server#Model#IInstance#Scenario">
+            <summary>Sets the stub of IInstance.get_Scenario()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIInstanceLog">
+            <summary>Stub type of DevChallenge.Server.Model.IInstanceLog</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.#ctor">
+            <summary>Initializes a new instance of type StubIInstanceLog</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#Finish(System.Xml.Linq.XElement)">
+            <summary>Sets the stub of IInstanceLog.Finish(XElement finishlog)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#SetScore(DevChallenge.Server.Model.IAgent,System.Nullable{System.Int32})">
+            <summary>Sets the stub of IInstanceLog.SetScore(IAgent agent, Nullable`1&lt;Int32&gt; score)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#Start">
+            <summary>Sets the stub of IInstanceLog.Start()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.FinishXElement">
+            <summary>Sets the stub of IInstanceLog.Finish(XElement finishlog)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.InstanceGet">
+            <summary>Sets the stub of IInstanceLog.get_Instance()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.SetScoreIAgentNullableOfInt32">
+            <summary>Sets the stub of IInstanceLog.SetScore(IAgent agent, Nullable`1&lt;Int32&gt; score)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.Start">
+            <summary>Sets the stub of IInstanceLog.Start()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#Instance">
+            <summary>Sets the stub of IInstanceLog.get_Instance()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIScenario">
+            <summary>Stub type of DevChallenge.Server.Model.IScenario</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenario.#ctor">
+            <summary>Initializes a new instance of type StubIScenario</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenario.AddAgentIAgentXElement">
+            <summary>Sets the stub of IScenario.AddAgent(IAgent agent, XElement parameters)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenario.CodeGet">
+            <summary>Sets the stub of IScenario.get_Code()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenario.DescriptionGet">
+            <summary>Sets the stub of IScenario.get_Description()</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenario.dcs::DevChallenge#Server#Model#IScenario#AddAgent(DevChallenge.Server.Model.IAgent,System.Xml.Linq.XElement)">
+            <summary>Sets the stub of IScenario.AddAgent(IAgent agent, XElement parameters)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenario.InstancesGet">
+            <summary>Sets the stub of IScenario.get_Instances()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenario.LogGet">
+            <summary>Sets the stub of IScenario.get_Log()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenario.NameGet">
+            <summary>Sets the stub of IScenario.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenario.dcs::DevChallenge#Server#Model#IScenario#Code">
+            <summary>Sets the stub of IScenario.get_Code()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenario.dcs::DevChallenge#Server#Model#IScenario#Description">
+            <summary>Sets the stub of IScenario.get_Description()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenario.dcs::DevChallenge#Server#Model#IScenario#Instances">
+            <summary>Sets the stub of IScenario.get_Instances()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenario.dcs::DevChallenge#Server#Model#IScenario#Log">
+            <summary>Sets the stub of IScenario.get_Log()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenario.dcs::DevChallenge#Server#Model#IScenario#Name">
+            <summary>Sets the stub of IScenario.get_Name()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIScenarioFactory">
+            <summary>Stub type of DevChallenge.Server.Model.IScenarioFactory</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioFactory.#ctor">
+            <summary>Initializes a new instance of type StubIScenarioFactory</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioFactory.CreateIScenarioLogFactory">
+            <summary>Sets the stub of IScenarioFactory.Create(IScenarioLogFactory logfactory)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioFactory.dcs::DevChallenge#Server#Model#IScenarioFactory#Create(DevChallenge.Server.Model.IScenarioLogFactory)">
+            <summary>Sets the stub of IScenarioFactory.Create(IScenarioLogFactory logfactory)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIScenarioLog">
+            <summary>Stub type of DevChallenge.Server.Model.IScenarioLog</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioLog.#ctor">
+            <summary>Initializes a new instance of type StubIScenarioLog</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioLog.CodeGet">
+            <summary>Sets the stub of IScenarioLog.get_Code()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioLog.CreateInstanceLogIInstance">
+            <summary>Sets the stub of IScenarioLog.CreateInstanceLog(IInstance instance)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioLog.DescriptionGet">
+            <summary>Sets the stub of IScenarioLog.get_Description()</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioLog.dcs::DevChallenge#Server#Model#IScenarioLog#CreateInstanceLog(DevChallenge.Server.Model.IInstance)">
+            <summary>Sets the stub of IScenarioLog.CreateInstanceLog(IInstance instance)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioLog.NameGet">
+            <summary>Sets the stub of IScenarioLog.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenarioLog.dcs::DevChallenge#Server#Model#IScenarioLog#Code">
+            <summary>Sets the stub of IScenarioLog.get_Code()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenarioLog.dcs::DevChallenge#Server#Model#IScenarioLog#Description">
+            <summary>Sets the stub of IScenarioLog.get_Description()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenarioLog.dcs::DevChallenge#Server#Model#IScenarioLog#Name">
+            <summary>Sets the stub of IScenarioLog.get_Name()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIScenarioLogFactory">
+            <summary>Stub type of DevChallenge.Server.Model.IScenarioLogFactory</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioLogFactory.#ctor">
+            <summary>Initializes a new instance of type StubIScenarioLogFactory</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioLogFactory.CreateIScenario">
+            <summary>Sets the stub of IScenarioLogFactory.Create(IScenario scenario)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioLogFactory.dcs::DevChallenge#Server#Model#IScenarioLogFactory#Create(DevChallenge.Server.Model.IScenario)">
+            <summary>Sets the stub of IScenarioLogFactory.Create(IScenario scenario)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIScenarioManager">
+            <summary>Stub type of DevChallenge.Server.Model.IScenarioManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioManager.#ctor">
+            <summary>Initializes a new instance of type StubIScenarioManager</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioManager.AddAgentIAgent">
+            <summary>Sets the stub of IScenarioManager.AddAgent(IAgent agent)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioManager.AddScenarioIScenario">
+            <summary>Sets the stub of IScenarioManager.AddScenario(IScenario scenario)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioManager.dcs::DevChallenge#Server#Model#IScenarioManager#AddAgent(DevChallenge.Server.Model.IAgent)">
+            <summary>Sets the stub of IScenarioManager.AddAgent(IAgent agent)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioManager.dcs::DevChallenge#Server#Model#IScenarioManager#AddScenario(DevChallenge.Server.Model.IScenario)">
+            <summary>Sets the stub of IScenarioManager.AddScenario(IScenario scenario)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIScenarioManager.dcs::DevChallenge#Server#Model#IScenarioManager#RemoveScenario(DevChallenge.Server.Model.IScenario)">
+            <summary>Sets the stub of IScenarioManager.RemoveScenario(IScenario scenario)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioManager.RemoveScenarioIScenario">
+            <summary>Sets the stub of IScenarioManager.RemoveScenario(IScenario scenario)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIScenarioManager.ScenariosGet">
+            <summary>Sets the stub of IScenarioManager.get_Scenarios()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIScenarioManager.dcs::DevChallenge#Server#Model#IScenarioManager#Scenarios">
+            <summary>Sets the stub of IScenarioManager.get_Scenarios()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIUser">
+            <summary>Stub type of DevChallenge.Server.Model.IUser</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUser.#ctor">
+            <summary>Initializes a new instance of type StubIUser</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUser.ChangePasswordString">
+            <summary>Sets the stub of IUser.ChangePassword(String pw)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUser.dcs::DevChallenge#Server#Model#IUser#ChangePassword(System.String)">
+            <summary>Sets the stub of IUser.ChangePassword(String pw)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUser.dcs::DevChallenge#Server#Model#IUser#VerifyPassword(System.String)">
+            <summary>Sets the stub of IUser.VerifyPassword(String pw)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUser.EmailGet">
+            <summary>Sets the stub of IUser.get_Email()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUser.FullNameGet">
+            <summary>Sets the stub of IUser.get_FullName()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUser.IdGet">
+            <summary>Sets the stub of IUser.get_Id()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUser.UserNameGet">
+            <summary>Sets the stub of IUser.get_UserName()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUser.VerifyPasswordString">
+            <summary>Sets the stub of IUser.VerifyPassword(String pw)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIUser.dcs::DevChallenge#Server#Model#IUser#Email">
+            <summary>Sets the stub of IUser.get_Email()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIUser.dcs::DevChallenge#Server#Model#IUser#FullName">
+            <summary>Sets the stub of IUser.get_FullName()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIUser.dcs::DevChallenge#Server#Model#IUser#Id">
+            <summary>Sets the stub of IUser.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIUser.dcs::DevChallenge#Server#Model#IUser#UserName">
+            <summary>Sets the stub of IUser.get_UserName()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIUserManager">
+            <summary>Stub type of DevChallenge.Server.Model.IUserManager</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUserManager.#ctor">
+            <summary>Initializes a new instance of type StubIUserManager</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUserManager.CreateStringStringStringString">
+            <summary>Sets the stub of IUserManager.Create(String Username, String password, String fullname, String email)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUserManager.dcs::DevChallenge#Server#Model#IUserManager#Create(System.String,System.String,System.String,System.String)">
+            <summary>Sets the stub of IUserManager.Create(String Username, String password, String fullname, String email)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUserManager.dcs::DevChallenge#Server#Model#IUserManager#Get(System.Int32)">
+            <summary>Sets the stub of IUserManager.Get(Int32 UserId)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUserManager.dcs::DevChallenge#Server#Model#IUserManager#Get(System.String,System.String)">
+            <summary>Sets the stub of IUserManager.Get(String Username, String password)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIUserManager.dcs::DevChallenge#Server#Model#IUserManager#RegisterUserCommands(DevChallenge.IConnection)">
+            <summary>Sets the stub of IUserManager.RegisterUserCommands(IConnection connection)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUserManager.GetInt32">
+            <summary>Sets the stub of IUserManager.Get(Int32 UserId)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUserManager.GetStringString">
+            <summary>Sets the stub of IUserManager.Get(String Username, String password)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIUserManager.RegisterUserCommandsIConnection">
+            <summary>Sets the stub of IUserManager.RegisterUserCommands(IConnection connection)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimAgentRecord">
+            <summary>Shim type of DevChallenge.Server.db.AgentRecord</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimAgentRecord.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimAgentRecord.#ctor(DevChallenge.Server.db.AgentRecord)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimAgentRecord.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimAgentRecord.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimAgentRecord.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimAgentRecord.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.Constructor">
+            <summary>Sets the shim of AgentRecord.AgentRecord()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.IdGet">
+            <summary>Sets the shim of AgentRecord.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.IdSetInt32">
+            <summary>Sets the shim of AgentRecord.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.InstanceGet">
+            <summary>Sets the shim of AgentRecord.get_Instance()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.InstanceIdGet">
+            <summary>Sets the shim of AgentRecord.get_InstanceId()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.InstanceIdSetInt32">
+            <summary>Sets the shim of AgentRecord.set_InstanceId(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.InstanceSetInstance">
+            <summary>Sets the shim of AgentRecord.set_Instance(Instance value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.NameGet">
+            <summary>Sets the shim of AgentRecord.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.NameSetString">
+            <summary>Sets the shim of AgentRecord.set_Name(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of AgentRecord.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of AgentRecord.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of AgentRecord.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of AgentRecord.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.RevisionGet">
+            <summary>Sets the shim of AgentRecord.get_Revision()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.RevisionSetInt32">
+            <summary>Sets the shim of AgentRecord.set_Revision(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.ScoreGet">
+            <summary>Sets the shim of AgentRecord.get_Score()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.ScoreSetNullableOfInt32">
+            <summary>Sets the shim of AgentRecord.set_Score(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.SendPropertyChangedString">
+            <summary>Sets the shim of AgentRecord.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.SendPropertyChanging">
+            <summary>Sets the shim of AgentRecord.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.StaticConstructor">
+            <summary>Sets the shim of AgentRecord.AgentRecord()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.UserGet">
+            <summary>Sets the shim of AgentRecord.get_User()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.UserIdGet">
+            <summary>Sets the shim of AgentRecord.get_UserId()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.UserIdSetInt32">
+            <summary>Sets the shim of AgentRecord.set_UserId(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.UserSetUser">
+            <summary>Sets the shim of AgentRecord.set_User(User value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.IdGet">
+            <summary>Sets the shim of AgentRecord.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.IdSetInt32">
+            <summary>Sets the shim of AgentRecord.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.InstanceGet">
+            <summary>Sets the shim of AgentRecord.get_Instance()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.InstanceIdGet">
+            <summary>Sets the shim of AgentRecord.get_InstanceId()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.InstanceIdSetInt32">
+            <summary>Sets the shim of AgentRecord.set_InstanceId(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.InstanceSetInstance">
+            <summary>Sets the shim of AgentRecord.set_Instance(Instance value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.NameGet">
+            <summary>Sets the shim of AgentRecord.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.NameSetString">
+            <summary>Sets the shim of AgentRecord.set_Name(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of AgentRecord.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of AgentRecord.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of AgentRecord.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of AgentRecord.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.RevisionGet">
+            <summary>Sets the shim of AgentRecord.get_Revision()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.RevisionSetInt32">
+            <summary>Sets the shim of AgentRecord.set_Revision(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.ScoreGet">
+            <summary>Sets the shim of AgentRecord.get_Score()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.ScoreSetNullableOfInt32">
+            <summary>Sets the shim of AgentRecord.set_Score(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.SendPropertyChangedString">
+            <summary>Sets the shim of AgentRecord.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.SendPropertyChanging">
+            <summary>Sets the shim of AgentRecord.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.UserGet">
+            <summary>Sets the shim of AgentRecord.get_User()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.UserIdGet">
+            <summary>Sets the shim of AgentRecord.get_UserId()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.UserIdSetInt32">
+            <summary>Sets the shim of AgentRecord.set_UserId(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimAgentRecord.AllInstances.UserSetUser">
+            <summary>Sets the shim of AgentRecord.set_User(User value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext">
+            <summary>Shim type of DevChallenge.Server.db.DevChallengeDataContext</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.#ctor(DevChallenge.Server.db.DevChallengeDataContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.AgentRecordsGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_AgentRecords()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.Constructor">
+            <summary>Sets the shim of DevChallengeDataContext.DevChallengeDataContext()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.ConstructorIDbConnection">
+            <summary>Sets the shim of DevChallengeDataContext.DevChallengeDataContext(IDbConnection connection)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.ConstructorIDbConnectionMappingSource">
+            <summary>Sets the shim of DevChallengeDataContext.DevChallengeDataContext(IDbConnection connection, MappingSource mappingSource)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.ConstructorString">
+            <summary>Sets the shim of DevChallengeDataContext.DevChallengeDataContext(String connection)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.ConstructorStringMappingSource">
+            <summary>Sets the shim of DevChallengeDataContext.DevChallengeDataContext(String connection, MappingSource mappingSource)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.InstancesGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_Instances()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.ScenariosGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_Scenarios()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.StaticConstructor">
+            <summary>Sets the shim of DevChallengeDataContext.DevChallengeDataContext()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.UsersGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_Users()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.AllInstances.AgentRecordsGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_AgentRecords()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.AllInstances.InstancesGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_Instances()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.AllInstances.ScenariosGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_Scenarios()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimDevChallengeDataContext.AllInstances.UsersGet">
+            <summary>Sets the shim of DevChallengeDataContext.get_Users()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimInstance">
+            <summary>Shim type of DevChallenge.Server.db.Instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimInstance.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimInstance.#ctor(DevChallenge.Server.db.Instance)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimInstance.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimInstance.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimInstance.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimInstance.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AgentRecordsGet">
+            <summary>Sets the shim of Instance.get_AgentRecords()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AgentRecordsSetEntitySetOfAgentRecord">
+            <summary>Sets the shim of Instance.set_AgentRecords(EntitySet`1&lt;AgentRecord&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.Constructor">
+            <summary>Sets the shim of Instance.Instance()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.DataGet">
+            <summary>Sets the shim of Instance.get_Data()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.DataSetString">
+            <summary>Sets the shim of Instance.set_Data(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.FinishedGet">
+            <summary>Sets the shim of Instance.get_Finished()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.FinishedSetNullableOfDateTime">
+            <summary>Sets the shim of Instance.set_Finished(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.IdGet">
+            <summary>Sets the shim of Instance.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.IdSetInt32">
+            <summary>Sets the shim of Instance.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of Instance.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of Instance.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of Instance.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of Instance.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.ScenarioGet">
+            <summary>Sets the shim of Instance.get_Scenario()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.ScenarioIdGet">
+            <summary>Sets the shim of Instance.get_ScenarioId()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.ScenarioIdSetInt32">
+            <summary>Sets the shim of Instance.set_ScenarioId(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.ScenarioSetScenario">
+            <summary>Sets the shim of Instance.set_Scenario(Scenario value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.SendPropertyChangedString">
+            <summary>Sets the shim of Instance.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.SendPropertyChanging">
+            <summary>Sets the shim of Instance.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.StartedGet">
+            <summary>Sets the shim of Instance.get_Started()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.StartedSetNullableOfDateTime">
+            <summary>Sets the shim of Instance.set_Started(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.StaticConstructor">
+            <summary>Sets the shim of Instance.Instance()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.attach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of Instance.attach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.detach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of Instance.detach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.AgentRecordsGet">
+            <summary>Sets the shim of Instance.get_AgentRecords()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.AgentRecordsSetEntitySetOfAgentRecord">
+            <summary>Sets the shim of Instance.set_AgentRecords(EntitySet`1&lt;AgentRecord&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.DataGet">
+            <summary>Sets the shim of Instance.get_Data()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.DataSetString">
+            <summary>Sets the shim of Instance.set_Data(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.FinishedGet">
+            <summary>Sets the shim of Instance.get_Finished()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.FinishedSetNullableOfDateTime">
+            <summary>Sets the shim of Instance.set_Finished(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.IdGet">
+            <summary>Sets the shim of Instance.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Instance.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of Instance.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of Instance.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of Instance.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of Instance.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.ScenarioGet">
+            <summary>Sets the shim of Instance.get_Scenario()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.ScenarioIdGet">
+            <summary>Sets the shim of Instance.get_ScenarioId()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.ScenarioIdSetInt32">
+            <summary>Sets the shim of Instance.set_ScenarioId(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.ScenarioSetScenario">
+            <summary>Sets the shim of Instance.set_Scenario(Scenario value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.SendPropertyChangedString">
+            <summary>Sets the shim of Instance.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.SendPropertyChanging">
+            <summary>Sets the shim of Instance.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.StartedGet">
+            <summary>Sets the shim of Instance.get_Started()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.StartedSetNullableOfDateTime">
+            <summary>Sets the shim of Instance.set_Started(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.attach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of Instance.attach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimInstance.AllInstances.detach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of Instance.detach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimScenario">
+            <summary>Shim type of DevChallenge.Server.db.Scenario</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimScenario.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimScenario.#ctor(DevChallenge.Server.db.Scenario)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimScenario.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimScenario.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimScenario.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimScenario.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.CodeGet">
+            <summary>Sets the shim of Scenario.get_Code()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.CodeSetString">
+            <summary>Sets the shim of Scenario.set_Code(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.Constructor">
+            <summary>Sets the shim of Scenario.Scenario()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.DescriptionGet">
+            <summary>Sets the shim of Scenario.get_Description()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.DescriptionSetString">
+            <summary>Sets the shim of Scenario.set_Description(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.IdGet">
+            <summary>Sets the shim of Scenario.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.IdSetInt32">
+            <summary>Sets the shim of Scenario.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.InstancesGet">
+            <summary>Sets the shim of Scenario.get_Instances()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.InstancesSetEntitySetOfInstance">
+            <summary>Sets the shim of Scenario.set_Instances(EntitySet`1&lt;Instance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.NameGet">
+            <summary>Sets the shim of Scenario.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.NameSetString">
+            <summary>Sets the shim of Scenario.set_Name(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of Scenario.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of Scenario.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of Scenario.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of Scenario.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.SendPropertyChangedString">
+            <summary>Sets the shim of Scenario.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.SendPropertyChanging">
+            <summary>Sets the shim of Scenario.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.StaticConstructor">
+            <summary>Sets the shim of Scenario.Scenario()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.attach_InstancesInstance">
+            <summary>Sets the shim of Scenario.attach_Instances(Instance entity)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.detach_InstancesInstance">
+            <summary>Sets the shim of Scenario.detach_Instances(Instance entity)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.CodeGet">
+            <summary>Sets the shim of Scenario.get_Code()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.CodeSetString">
+            <summary>Sets the shim of Scenario.set_Code(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.DescriptionGet">
+            <summary>Sets the shim of Scenario.get_Description()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of Scenario.set_Description(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.IdGet">
+            <summary>Sets the shim of Scenario.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Scenario.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.InstancesGet">
+            <summary>Sets the shim of Scenario.get_Instances()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.InstancesSetEntitySetOfInstance">
+            <summary>Sets the shim of Scenario.set_Instances(EntitySet`1&lt;Instance&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.NameGet">
+            <summary>Sets the shim of Scenario.get_Name()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.NameSetString">
+            <summary>Sets the shim of Scenario.set_Name(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of Scenario.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of Scenario.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of Scenario.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of Scenario.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.SendPropertyChangedString">
+            <summary>Sets the shim of Scenario.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.SendPropertyChanging">
+            <summary>Sets the shim of Scenario.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.attach_InstancesInstance">
+            <summary>Sets the shim of Scenario.attach_Instances(Instance entity)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimScenario.AllInstances.detach_InstancesInstance">
+            <summary>Sets the shim of Scenario.detach_Instances(Instance entity)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimUser">
+            <summary>Shim type of DevChallenge.Server.db.User</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimUser.#ctor(DevChallenge.Server.db.User)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimUser.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.ShimUser.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AgentRecordsGet">
+            <summary>Sets the shim of User.get_AgentRecords()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AgentRecordsSetEntitySetOfAgentRecord">
+            <summary>Sets the shim of User.set_AgentRecords(EntitySet`1&lt;AgentRecord&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.Constructor">
+            <summary>Sets the shim of User.User()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.EmailGet">
+            <summary>Sets the shim of User.get_Email()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.EmailSetString">
+            <summary>Sets the shim of User.set_Email(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.FullNameGet">
+            <summary>Sets the shim of User.get_FullName()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.FullNameSetString">
+            <summary>Sets the shim of User.set_FullName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.IdGet">
+            <summary>Sets the shim of User.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.IdSetInt32">
+            <summary>Sets the shim of User.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.LoginGet">
+            <summary>Sets the shim of User.get_Login()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.LoginSetString">
+            <summary>Sets the shim of User.set_Login(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of User.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of User.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of User.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of User.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.PwDigestGet">
+            <summary>Sets the shim of User.get_PwDigest()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.PwDigestSetString">
+            <summary>Sets the shim of User.set_PwDigest(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.SaltGet">
+            <summary>Sets the shim of User.get_Salt()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.SaltSetString">
+            <summary>Sets the shim of User.set_Salt(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.SendPropertyChangedString">
+            <summary>Sets the shim of User.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.SendPropertyChanging">
+            <summary>Sets the shim of User.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.StaticConstructor">
+            <summary>Sets the shim of User.User()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.attach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of User.attach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.detach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of User.detach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.ShimUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.AgentRecordsGet">
+            <summary>Sets the shim of User.get_AgentRecords()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.AgentRecordsSetEntitySetOfAgentRecord">
+            <summary>Sets the shim of User.set_AgentRecords(EntitySet`1&lt;AgentRecord&gt; value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.EmailGet">
+            <summary>Sets the shim of User.get_Email()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.EmailSetString">
+            <summary>Sets the shim of User.set_Email(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.FullNameGet">
+            <summary>Sets the shim of User.get_FullName()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.FullNameSetString">
+            <summary>Sets the shim of User.set_FullName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.IdGet">
+            <summary>Sets the shim of User.get_Id()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.IdSetInt32">
+            <summary>Sets the shim of User.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.LoginGet">
+            <summary>Sets the shim of User.get_Login()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.LoginSetString">
+            <summary>Sets the shim of User.set_Login(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>Sets the shim of User.add_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>Sets the shim of User.remove_PropertyChanged(PropertyChangedEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>Sets the shim of User.add_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>Sets the shim of User.remove_PropertyChanging(PropertyChangingEventHandler value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.PwDigestGet">
+            <summary>Sets the shim of User.get_PwDigest()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.PwDigestSetString">
+            <summary>Sets the shim of User.set_PwDigest(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.SaltGet">
+            <summary>Sets the shim of User.get_Salt()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.SaltSetString">
+            <summary>Sets the shim of User.set_Salt(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.SendPropertyChangedString">
+            <summary>Sets the shim of User.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.SendPropertyChanging">
+            <summary>Sets the shim of User.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.attach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of User.attach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.ShimUser.AllInstances.detach_AgentRecordsAgentRecord">
+            <summary>Sets the shim of User.detach_AgentRecords(AgentRecord entity)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.StubAgentRecord">
+            <summary>Stub type of DevChallenge.Server.db.AgentRecord</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubAgentRecord.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubAgentRecord.InitializeStub">
+            <summary>Initializes a new instance of type StubAgentRecord</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubAgentRecord.SendPropertyChanged(System.String)">
+            <summary>Sets the stub of AgentRecord.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubAgentRecord.SendPropertyChangedString">
+            <summary>Sets the stub of AgentRecord.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubAgentRecord.SendPropertyChanging">
+            <summary>Sets the stub of AgentRecord.SendPropertyChanging()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubAgentRecord.SendPropertyChanging01">
+            <summary>Sets the stub of AgentRecord.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubAgentRecord.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubAgentRecord.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubAgentRecord.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext">
+            <summary>Stub type of DevChallenge.Server.db.DevChallengeDataContext</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.#ctor(System.Data.IDbConnection)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.#ctor(System.Data.IDbConnection,System.Data.Linq.Mapping.MappingSource)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.#ctor(System.String,System.Data.Linq.Mapping.MappingSource)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DataContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.DisposeBoolean">
+            <summary>Sets the stub of DataContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.InitializeStub">
+            <summary>Initializes a new instance of type StubDevChallengeDataContext</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.SubmitChanges(System.Data.Linq.ConflictMode)">
+            <summary>Sets the stub of DataContext.SubmitChanges(ConflictMode failureMode)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.SubmitChangesConflictMode">
+            <summary>Sets the stub of DataContext.SubmitChanges(ConflictMode failureMode)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubDevChallengeDataContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.StubInstance">
+            <summary>Stub type of DevChallenge.Server.db.Instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubInstance.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubInstance.InitializeStub">
+            <summary>Initializes a new instance of type StubInstance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubInstance.SendPropertyChanged(System.String)">
+            <summary>Sets the stub of Instance.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubInstance.SendPropertyChangedString">
+            <summary>Sets the stub of Instance.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubInstance.SendPropertyChanging">
+            <summary>Sets the stub of Instance.SendPropertyChanging()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubInstance.SendPropertyChanging01">
+            <summary>Sets the stub of Instance.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubInstance.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubInstance.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubInstance.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.StubScenario">
+            <summary>Stub type of DevChallenge.Server.db.Scenario</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubScenario.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubScenario.InitializeStub">
+            <summary>Initializes a new instance of type StubScenario</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubScenario.SendPropertyChanged(System.String)">
+            <summary>Sets the stub of Scenario.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubScenario.SendPropertyChangedString">
+            <summary>Sets the stub of Scenario.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubScenario.SendPropertyChanging">
+            <summary>Sets the stub of Scenario.SendPropertyChanging()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubScenario.SendPropertyChanging01">
+            <summary>Sets the stub of Scenario.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubScenario.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubScenario.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubScenario.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.db.Fakes.StubUser">
+            <summary>Stub type of DevChallenge.Server.db.User</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubUser.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubUser.InitializeStub">
+            <summary>Initializes a new instance of type StubUser</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubUser.SendPropertyChanged(System.String)">
+            <summary>Sets the stub of User.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubUser.SendPropertyChangedString">
+            <summary>Sets the stub of User.SendPropertyChanged(String propertyName)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.db.Fakes.StubUser.SendPropertyChanging">
+            <summary>Sets the stub of User.SendPropertyChanging()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.db.Fakes.StubUser.SendPropertyChanging01">
+            <summary>Sets the stub of User.SendPropertyChanging()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.db.Fakes.StubUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

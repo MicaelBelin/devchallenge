@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DbDevChallenge">
+  <DataContextMoniker Name="/DevChallengeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a4dc2a38-c9e0-4b44-ba61-2fac2b9bb0d4" absoluteBounds="6.25, 0.875, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/DevChallengeDataContext/AgentRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3829663e-d3c3-4ffd-8abb-ec94dc7e3850" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bcb5030-bb80-4b44-aee3-fb531529b7c6" absoluteBounds="3.5, 1, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/DevChallengeDataContext/Instance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6751ffd-211d-49a9-8c7c-68b66237937d" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55a1f3a7-f636-40e7-a228-2927cea23e4c" absoluteBounds="0.75, 1.125, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/DevChallengeDataContext/Scenario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24c26a7f-eabd-4a4a-b0e3-19aef8cf7acd" absoluteBounds="0.765, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29d4bbc5-f57b-44e4-94b0-7ce69961d93a" absoluteBounds="3.5, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DevChallengeDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bcdf45a9-163d-4f11-bf65-6afc08b1dbb7" absoluteBounds="3.515, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.88544840494792); (6.25 : 1.88544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DevChallengeDataContext/Instance/Instance_AgentRecord" />
+      <nodes>
+        <classShapeMoniker Id="5bcb5030-bb80-4b44-aee3-fb531529b7c6" />
+        <classShapeMoniker Id="a4dc2a38-c9e0-4b44-ba61-2fac2b9bb0d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.91429768880208); (3.5 : 1.91429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DevChallengeDataContext/Scenario/Scenario_Instance" />
+      <nodes>
+        <classShapeMoniker Id="55a1f3a7-f636-40e7-a228-2927cea23e4c" />
+        <classShapeMoniker Id="5bcb5030-bb80-4b44-aee3-fb531529b7c6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.85659912109375); (7.25 : 4.85659912109375); (7.25 : 2.8381982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DevChallengeDataContext/User/User_AgentRecord" />
+      <nodes>
+        <classShapeMoniker Id="29d4bbc5-f57b-44e4-94b0-7ce69961d93a" />
+        <classShapeMoniker Id="a4dc2a38-c9e0-4b44-ba61-2fac2b9bb0d4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

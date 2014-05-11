@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="devchallenge" Class="DevChallengeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=devchallenge;Integrated Security=True" SettingsObjectName="DevChallenge.Server.Properties.Settings" SettingsPropertyName="devchallengeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AgentRecord" Member="AgentRecords">
+    <Type Name="AgentRecord">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InstanceId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Revision" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Instance_AgentRecord" Member="Instance" ThisKey="InstanceId" OtherKey="Id" Type="Instance" IsForeignKey="true" />
+      <Association Name="User_AgentRecord" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Instance" Member="Instances">
+    <Type Name="Instance">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ScenarioId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Started" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Finished" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Instance_AgentRecord" Member="AgentRecords" ThisKey="Id" OtherKey="InstanceId" Type="AgentRecord" />
+      <Association Name="Scenario_Instance" Member="Scenario" ThisKey="ScenarioId" OtherKey="Id" Type="Scenario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Scenario" Member="Scenarios">
+    <Type Name="Scenario">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Code" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Scenario_Instance" Member="Instances" ThisKey="Id" OtherKey="ScenarioId" Type="Instance" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PwDigest" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="Salt" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="User_AgentRecord" Member="AgentRecords" ThisKey="Id" OtherKey="UserId" Type="AgentRecord" />
+    </Type>
+  </Table>
+</Database>
