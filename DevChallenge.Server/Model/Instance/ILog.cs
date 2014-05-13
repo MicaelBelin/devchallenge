@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DevChallenge.Server.Model
+namespace DevChallenge.Server.Model.Instance
 {
-    public interface IInstanceLog
+    public interface ILog
     {
         IInstance Instance { get; }
         void Start();

@@ -9,7 +9,7 @@ namespace DevChallenge.Server.Implementation
 {
     public class Context : IContext
     {
-        public Context(IScenarioManager scenariomanager, IEnumerable<IAgentEntryPoint> entrypoints)
+        public Context(IScenarioManager scenariomanager, IEnumerable<Model.Agent.ISource> entrypoints)
         {
             this.scenariomanager = scenariomanager;
             if (entrypoints != null) foreach (var ep in entrypoints) AddEntryPoint(ep);
@@ -21,32 +21,32 @@ namespace DevChallenge.Server.Implementation
             get { return scenariomanager; }
         }
 
-        List<IAgentEntryPoint> entrypoints = new List<IAgentEntryPoint>();
-        public IEnumerable<IAgentEntryPoint> EntryPoints
+        List<Model.Agent.ISource> agentsources = new List<Model.Agent.ISource>();
+        public IEnumerable<Model.Agent.ISource> AgentSources
         {
             get 
             {
-                lock (entrypoints)
+                lock (agentsources)
                 {
-                    return entrypoints.ToArray();
+                    return agentsources.ToArray();
                 }
             }
         }
 
-        public void AddEntryPoint(IAgentEntryPoint ep)
+        public void AddEntryPoint(Model.Agent.ISource ep)
         {
-            lock(entrypoints)
+            lock(agentsources)
             {
-                entrypoints.Add(ep);
+                agentsources.Add(ep);
                 ep.AgentSpawned += scenariomanager.AddAgent;
             }
         }
 
-        public void RemoveEntryPoint(IAgentEntryPoint ep)
+        public void RemoveEntryPoint(Model.Agent.ISource ep)
         {
-            if (!entrypoints.Contains(ep)) throw new InvalidOperationException("entry point not found");
+            if (!agentsources.Contains(ep)) throw new InvalidOperationException("entry point not found");
             ep.AgentSpawned -= scenariomanager.AddAgent;
-            entrypoints.Remove(ep);
+            agentsources.Remove(ep);
         }
 
     }

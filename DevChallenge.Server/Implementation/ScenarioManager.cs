@@ -13,20 +13,25 @@ namespace DevChallenge.Server.Implementation
 {
     public class ScenarioManager : IScenarioManager
     {
+
         public void AddScenario(IScenario scenario)
         {
+            if (scenario == null) throw new ArgumentNullException("scenario");
             lock (scenarios)
             {
                 scenarios.Add(scenario);
+                eventlog.Add(EventLogType.Message, String.Format("Added Scenario \"{0}\"", scenario.Name));
                 if (ScenarioAdded != null) ScenarioAdded(scenario);
             }
         }
 
         public void RemoveScenario(IScenario scenario)
         {
+            if (scenario == null) throw new ArgumentNullException("scenario");
             lock (scenarios)
             {
                 scenarios.Remove(scenario);
+                eventlog.Add(EventLogType.Message, String.Format("Removed scenario \"{0}\"", scenario.Name));
                 if (ScenarioRemoved != null) ScenarioRemoved(scenario);
             }
         }
@@ -45,9 +50,13 @@ namespace DevChallenge.Server.Implementation
         }
 
 
-        public ScenarioManager()
+        public ScenarioManager(Model.IEventLog eventlog)
         {
+            this.eventlog = new Model.EventLog.Labeled("ScenarioManager",eventlog);
         }
+
+        Model.EventLog.Labeled eventlog;
+
 
         public void LoadFromDb()
         {
@@ -135,8 +144,13 @@ namespace DevChallenge.Server.Implementation
 
         public void AddAgent(IAgent agent)
         {
+            if (agent == null) throw new ArgumentNullException("agent");
 
             var connection = agent.Connection;
+
+            eventlog.Add(EventLogType.Message, String.Format("Agent added: \"{0}\"", agent.Name));
+            eventlog.Add(EventLogType.Message, String.Format("Owner: {0}({1}{2})", agent.Owner.UserName, agent.Owner.FullName, agent.Owner.Email));
+
             var response = agent.Connection.SendRequest(new XElement("scenario.select",
                 new XElement("scenarios",
                     Scenarios.Select(x => new XElement("scenario", new XAttribute("name", x.Name))))));
@@ -148,11 +162,13 @@ namespace DevChallenge.Server.Implementation
             var scenario = Scenarios.SingleOrDefault(x => x.Name == scenarioname);
             if (scenario == null)
             {
+                eventlog.Add(EventLogType.Message, string.Format("Agent \"{0}\" selected invalid scenario: \"{1}\"", agent.Name, scenarioname));
                 connection.SendNotification(new XElement("scenario.error", new XElement("message", "Scenario not found")));
                 agent.Connection.Close();
             }
             else
             {
+                eventlog.Add(EventLogType.Message, string.Format("Agent \"{0}\" selected scenario: \"{1}\"", agent.Name, scenarioname));
                 scenario.AddAgent(agent, response);
             }
 

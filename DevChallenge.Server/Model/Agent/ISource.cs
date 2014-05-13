@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevChallenge.Server.Model
+namespace DevChallenge.Server.Model.Agent
 {
-    public interface IAgentEntryPoint
+    public interface ISource
     {
         event Action<IAgent> AgentSpawned;
     }

@@ -13,6 +13,6 @@ namespace DevChallenge.Server.Model
         string Description {get;}
         string Code {get;}
 
-        IInstanceLog CreateInstanceLog(IInstance instance);
+        Instance.ILog CreateInstanceLog(IInstance instance);
     }
 }

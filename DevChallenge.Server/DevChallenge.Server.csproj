@@ -54,9 +54,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Extensions.cs" />
     <Compile Include="Implementation\Agent.cs" />
     <Compile Include="Implementation\Context.cs" />
+    <Compile Include="Model\EventLog\Labeled.cs" />
+    <Compile Include="Model\EventLog\Collection.cs" />
+    <Compile Include="Model\EventLog\StdOut.cs" />
     <Compile Include="Implementation\LogManager.cs" />
     <Compile Include="Implementation\LogManager\InstanceLog.cs" />
     <Compile Include="Implementation\LogManager\ScenarioLog.cs" />
@@ -67,10 +69,11 @@
     <Compile Include="Implementation\User.cs" />
     <Compile Include="Implementation\UserManager.cs" />
     <Compile Include="Model\IAgent.cs" />
-    <Compile Include="Model\IAgentEntryPoint.cs" />
+    <Compile Include="Model\Agent\ISource.cs" />
     <Compile Include="Model\IContext.cs" />
     <Compile Include="Model\IInstance.cs" />
-    <Compile Include="Model\IInstanceLog.cs" />
+    <Compile Include="Model\IEventLog.cs" />
+    <Compile Include="Model\Instance\ILog.cs" />
     <Compile Include="Model\IScenario.cs" />
     <Compile Include="Model\IScenarioLog.cs" />
     <Compile Include="Model\IScenarioLogFactory.cs" />

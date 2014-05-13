@@ -10,7 +10,7 @@ namespace DevChallenge.Server.Implementation
 {
     public abstract partial class SingleUserScenario : IScenario
     {
-        protected abstract void Execute(IAgent agent, IInstanceLog log,XElement parameters);
+        protected abstract void Execute(IAgent agent, Model.Instance.ILog log,XElement parameters);
 
         public string Name { get; private set; }
         public string Description { get; private set; }
@@ -76,12 +76,12 @@ namespace DevChallenge.Server.Implementation
         }
 
 
-        protected override void Execute(IAgent agent, IInstanceLog log, XElement parameters)
+        protected override void Execute(IAgent agent, Model.Instance.ILog log, XElement parameters)
         {
             if (ExecuteDelegate != null) ExecuteDelegate(agent, log,parameters);
         }
 
-        public Action<IAgent, IInstanceLog,XElement> ExecuteDelegate { get; set; }
+        public Action<IAgent, Model.Instance.ILog,XElement> ExecuteDelegate { get; set; }
 
     }
 }

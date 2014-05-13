@@ -12,7 +12,7 @@ namespace DevChallenge.Server.Model
 
         IEnumerable<IAgent> Agents { get; }
 
-        IInstanceLog Log { get; }
+        Instance.ILog Log { get; }
 
         event Action<IInstance> Started;
         event Action<IInstance> Finished;

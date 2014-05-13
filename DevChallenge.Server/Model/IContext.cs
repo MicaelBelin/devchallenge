@@ -9,6 +9,6 @@ namespace DevChallenge.Server.Model
     public interface IContext
     {
         IScenarioManager ScenarioManager { get; }
-        IEnumerable<IAgentEntryPoint> EntryPoints { get; }
+        IEnumerable<Agent.ISource> AgentSources { get; }
     }
 }

@@ -16,7 +16,7 @@ namespace Test_DevChallengeServer
         [TestMethod]
         public void ListScenarios_SelectScenario()
         {
-            var scenariomanager = new ScenarioManager();
+            var scenariomanager = new ScenarioManager(null);
 
             var connection = new DevChallenge.Fakes.FakeConnection();
 
@@ -52,7 +52,7 @@ namespace Test_DevChallengeServer
         [TestMethod]
         public void SelectInvalidScenario()
         {
-            var scenariomanager = new ScenarioManager();
+            var scenariomanager = new ScenarioManager(null);
 
             var connection = new DevChallenge.Fakes.FakeConnection();
 

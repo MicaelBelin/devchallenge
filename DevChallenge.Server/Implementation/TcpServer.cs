@@ -11,7 +11,7 @@ using DevChallenge.Server.Model;
 
 namespace DevChallenge.Server.Implementation
 {
-    public class TcpServer : IAgentEntryPoint
+    public class TcpServer : Model.Agent.ISource
     {
         string connectionstring;
         int port;

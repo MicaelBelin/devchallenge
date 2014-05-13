@@ -4,24 +4,6 @@
         <name>DevChallenge.Server.Fakes</name>
     </assembly>
     <members>
-        <member name="T:DevChallenge.Server.Fakes.ShimExtensions">
-            <summary>Shim type of DevChallenge.Server.Extensions</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Fakes.ShimExtensions.DeserializedOf1XElement``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Xml.Linq.XElement,``0})">
-            <summary>Sets the shim of Extensions.Deserialized(XElement e)</summary>
-        </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimExtensions.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
         <member name="T:DevChallenge.Server.Fakes.ShimProgram">
             <summary>Shim type of DevChallenge.Server.Program</summary>
         </member>
@@ -40,8 +22,8 @@
         <member name="P:DevChallenge.Server.Fakes.ShimProgram.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram.Constructor">
-            <summary>Sets the shim of Program.Program()</summary>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.ConstructorIEventLog">
+            <summary>Sets the shim of Program.Program(IEventLog eventlog)</summary>
         </member>
         <member name="P:DevChallenge.Server.Fakes.ShimProgram.LoadChallengesDirectoryInfo">
             <summary>Sets the shim of Program.LoadChallenges(DirectoryInfo path)</summary>
@@ -49,34 +31,31 @@
         <member name="P:DevChallenge.Server.Fakes.ShimProgram.Run">
             <summary>Sets the shim of Program.Run()</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram.StaticConstructor">
-            <summary>Sets the shim of Program.Program()</summary>
-        </member>
         <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__0FileInfo">
             <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__0(FileInfo x)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__1FileInfo">
-            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__1(FileInfo x)</summary>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__1Type">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__1(Type x)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__2Assembly">
-            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__2(Assembly assembly)</summary>
-        </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__3Type">
-            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__3(Type x)</summary>
-        </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__4Type">
-            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__4(Type x)</summary>
-        </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._Runb__dIAgent">
-            <summary>Sets the shim of Program.&lt;Run&gt;b__d(IAgent agent)</summary>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._Runb__4IAgent">
+            <summary>Sets the shim of Program.&lt;Run&gt;b__4(IAgent agent)</summary>
         </member>
         <member name="T:DevChallenge.Server.Fakes.ShimProgram.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances.LoadChallengesDirectoryInfo">
+            <summary>Sets the shim of Program.LoadChallenges(DirectoryInfo path)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances.Run">
+            <summary>Sets the shim of Program.Run()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances._Runb__4IAgent">
+            <summary>Sets the shim of Program.&lt;Run&gt;b__4(IAgent agent)</summary>
+        </member>
         <member name="T:DevChallenge.Server.Fakes.StubProgram">
             <summary>Stub type of DevChallenge.Server.Program</summary>
         </member>
-        <member name="M:DevChallenge.Server.Fakes.StubProgram.#ctor">
+        <member name="M:DevChallenge.Server.Fakes.StubProgram.#ctor(DevChallenge.Server.Model.IEventLog)">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="M:DevChallenge.Server.Fakes.StubProgram.InitializeStub">
@@ -184,20 +163,20 @@
         <member name="M:DevChallenge.Server.Implementation.Fakes.ShimContext.Bind(DevChallenge.Server.Model.IContext)">
             <summary>Binds the members of the interface to the shim.</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AddEntryPointIAgentEntryPoint">
-            <summary>Sets the shim of Context.AddEntryPoint(IAgentEntryPoint ep)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AddEntryPointISource">
+            <summary>Sets the shim of Context.AddEntryPoint(ISource ep)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AgentSourcesGet">
+            <summary>Sets the shim of Context.get_AgentSources()</summary>
         </member>
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.ConstructorIScenarioManagerIEnumerableOfIAgentEntryPoint">
-            <summary>Sets the shim of Context.Context(IScenarioManager scenariomanager, IEnumerable`1&lt;IAgentEntryPoint&gt; entrypoints)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.ConstructorIScenarioManagerIEnumerableOfISource">
+            <summary>Sets the shim of Context.Context(IScenarioManager scenariomanager, IEnumerable`1&lt;ISource&gt; entrypoints)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.EntryPointsGet">
-            <summary>Sets the shim of Context.get_EntryPoints()</summary>
-        </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.RemoveEntryPointIAgentEntryPoint">
-            <summary>Sets the shim of Context.RemoveEntryPoint(IAgentEntryPoint ep)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.RemoveEntryPointISource">
+            <summary>Sets the shim of Context.RemoveEntryPoint(ISource ep)</summary>
         </member>
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.ScenarioManagerGet">
             <summary>Sets the shim of Context.get_ScenarioManager()</summary>
@@ -205,14 +184,14 @@
         <member name="T:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.AddEntryPointIAgentEntryPoint">
-            <summary>Sets the shim of Context.AddEntryPoint(IAgentEntryPoint ep)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.AddEntryPointISource">
+            <summary>Sets the shim of Context.AddEntryPoint(ISource ep)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.EntryPointsGet">
-            <summary>Sets the shim of Context.get_EntryPoints()</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.AgentSourcesGet">
+            <summary>Sets the shim of Context.get_AgentSources()</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.RemoveEntryPointIAgentEntryPoint">
-            <summary>Sets the shim of Context.RemoveEntryPoint(IAgentEntryPoint ep)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.RemoveEntryPointISource">
+            <summary>Sets the shim of Context.RemoveEntryPoint(ISource ep)</summary>
         </member>
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimContext.AllInstances.ScenarioManagerGet">
             <summary>Sets the shim of Context.get_ScenarioManager()</summary>
@@ -301,8 +280,8 @@
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.Constructor">
-            <summary>Sets the shim of ScenarioManager.ScenarioManager()</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.ConstructorIEventLog">
+            <summary>Sets the shim of ScenarioManager.ScenarioManager(IEventLog eventlog)</summary>
         </member>
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimScenarioManager.LoadFromDb">
             <summary>Sets the shim of ScenarioManager.LoadFromDb()</summary>
@@ -487,11 +466,11 @@
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteDelegateGet">
             <summary>Sets the shim of SingleUserScenarioDelegate.get_ExecuteDelegate()</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteDelegateSetActionOfIAgentIInstanceLogXElement">
-            <summary>Sets the shim of SingleUserScenarioDelegate.set_ExecuteDelegate(Action`3&lt;IAgent,IInstanceLog,XElement&gt; value)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteDelegateSetActionOfIAgentILogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.set_ExecuteDelegate(Action`3&lt;IAgent,ILog,XElement&gt; value)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteIAgentIInstanceLogXElement">
-            <summary>Sets the shim of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.ExecuteIAgentILogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.Execute(IAgent agent, ILog log, XElement parameters)</summary>
         </member>
         <member name="T:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances">
             <summary>Define shims for all instances members</summary>
@@ -499,11 +478,11 @@
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteDelegateGet">
             <summary>Sets the shim of SingleUserScenarioDelegate.get_ExecuteDelegate()</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteDelegateSetActionOfIAgentIInstanceLogXElement">
-            <summary>Sets the shim of SingleUserScenarioDelegate.set_ExecuteDelegate(Action`3&lt;IAgent,IInstanceLog,XElement&gt; value)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteDelegateSetActionOfIAgentILogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.set_ExecuteDelegate(Action`3&lt;IAgent,ILog,XElement&gt; value)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteIAgentIInstanceLogXElement">
-            <summary>Sets the shim of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        <member name="P:DevChallenge.Server.Implementation.Fakes.ShimSingleUserScenarioDelegate.AllInstances.ExecuteIAgentILogXElement">
+            <summary>Sets the shim of SingleUserScenarioDelegate.Execute(IAgent agent, ILog log, XElement parameters)</summary>
         </member>
         <member name="T:DevChallenge.Server.Implementation.Fakes.ShimTcpServer">
             <summary>Shim type of DevChallenge.Server.Implementation.TcpServer</summary>
@@ -520,7 +499,7 @@
         <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.BehaveAsNotImplemented">
             <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.Bind(DevChallenge.Server.Model.IAgentEntryPoint)">
+        <member name="M:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.Bind(DevChallenge.Server.Model.Agent.ISource)">
             <summary>Binds the members of the interface to the shim.</summary>
         </member>
         <member name="P:DevChallenge.Server.Implementation.Fakes.ShimTcpServer.AgentSpawnedAddActionOfIAgent">
@@ -721,7 +700,7 @@
         <member name="T:DevChallenge.Server.Implementation.Fakes.StubContext">
             <summary>Stub type of DevChallenge.Server.Implementation.Context</summary>
         </member>
-        <member name="M:DevChallenge.Server.Implementation.Fakes.StubContext.#ctor(DevChallenge.Server.Model.IScenarioManager,System.Collections.Generic.IEnumerable{DevChallenge.Server.Model.IAgentEntryPoint})">
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubContext.#ctor(DevChallenge.Server.Model.IScenarioManager,System.Collections.Generic.IEnumerable{DevChallenge.Server.Model.Agent.ISource})">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="M:DevChallenge.Server.Implementation.Fakes.StubContext.InitializeStub">
@@ -757,7 +736,7 @@
         <member name="T:DevChallenge.Server.Implementation.Fakes.StubScenarioManager">
             <summary>Stub type of DevChallenge.Server.Implementation.ScenarioManager</summary>
         </member>
-        <member name="M:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.#ctor">
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.#ctor(DevChallenge.Server.Model.IEventLog)">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="M:DevChallenge.Server.Implementation.Fakes.StubScenarioManager.InitializeStub">
@@ -778,11 +757,11 @@
         <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.#ctor(System.String,DevChallenge.Server.Model.IScenarioLogFactory,System.String,System.String)">
             <summary>Initializes a new instance</summary>
         </member>
-        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.Execute(DevChallenge.Server.Model.IAgent,DevChallenge.Server.Model.IInstanceLog,System.Xml.Linq.XElement)">
-            <summary>Sets the stub of SingleUserScenario.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.Execute(DevChallenge.Server.Model.IAgent,DevChallenge.Server.Model.Instance.ILog,System.Xml.Linq.XElement)">
+            <summary>Sets the stub of SingleUserScenario.Execute(IAgent agent, ILog log, XElement parameters)</summary>
         </member>
-        <member name="F:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.ExecuteIAgentIInstanceLogXElement">
-            <summary>Sets the stub of SingleUserScenario.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        <member name="F:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.ExecuteIAgentILogXElement">
+            <summary>Sets the stub of SingleUserScenario.Execute(IAgent agent, ILog log, XElement parameters)</summary>
         </member>
         <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenario.InitializeStub">
             <summary>Initializes a new instance of type StubSingleUserScenario</summary>
@@ -802,11 +781,11 @@
         <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.#ctor(System.String,DevChallenge.Server.Model.IScenarioLogFactory,System.String,System.String)">
             <summary>Initializes a new instance</summary>
         </member>
-        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.Execute(DevChallenge.Server.Model.IAgent,DevChallenge.Server.Model.IInstanceLog,System.Xml.Linq.XElement)">
-            <summary>Sets the stub of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.Execute(DevChallenge.Server.Model.IAgent,DevChallenge.Server.Model.Instance.ILog,System.Xml.Linq.XElement)">
+            <summary>Sets the stub of SingleUserScenarioDelegate.Execute(IAgent agent, ILog log, XElement parameters)</summary>
         </member>
-        <member name="F:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.ExecuteIAgentIInstanceLogXElement">
-            <summary>Sets the stub of SingleUserScenarioDelegate.Execute(IAgent agent, IInstanceLog log, XElement parameters)</summary>
+        <member name="F:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.ExecuteIAgentILogXElement">
+            <summary>Sets the stub of SingleUserScenarioDelegate.Execute(IAgent agent, ILog log, XElement parameters)</summary>
         </member>
         <member name="M:DevChallenge.Server.Implementation.Fakes.StubSingleUserScenarioDelegate.InitializeStub">
             <summary>Initializes a new instance of type StubSingleUserScenarioDelegate</summary>
@@ -874,6 +853,201 @@
         <member name="P:DevChallenge.Server.Implementation.Fakes.StubUserManager.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
         </member>
+        <member name="T:DevChallenge.Server.Model.Agent.Fakes.StubISource">
+            <summary>Stub type of DevChallenge.Server.Model.Agent.ISource</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Agent.Fakes.StubISource.#ctor">
+            <summary>Initializes a new instance of type StubISource</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection">
+            <summary>Shim type of DevChallenge.Server.Model.EventLog.Collection</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.#ctor(DevChallenge.Server.Model.EventLog.Collection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.Bind(DevChallenge.Server.Model.IEventLog)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.AddEventLogTypeString">
+            <summary>Sets the shim of Collection.Add(EventLogType type, String msg)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.Constructor">
+            <summary>Sets the shim of Collection.Collection()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.TargetsGet">
+            <summary>Sets the shim of Collection.get_Targets()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.TargetsSetIEventLogArray">
+            <summary>Sets the shim of Collection.set_Targets(IEventLog[] value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.AllInstances.AddEventLogTypeString">
+            <summary>Sets the shim of Collection.Add(EventLogType type, String msg)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.AllInstances.TargetsGet">
+            <summary>Sets the shim of Collection.get_Targets()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimCollection.AllInstances.TargetsSetIEventLogArray">
+            <summary>Sets the shim of Collection.set_Targets(IEventLog[] value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled">
+            <summary>Shim type of DevChallenge.Server.Model.EventLog.Labeled</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.#ctor(DevChallenge.Server.Model.EventLog.Labeled)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.Bind(DevChallenge.Server.Model.IEventLog)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.AddEventLogTypeString">
+            <summary>Sets the shim of Labeled.Add(EventLogType type, String msg)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.ConstructorStringIEventLog">
+            <summary>Sets the shim of Labeled.Labeled(String label, IEventLog target)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.LabelGet">
+            <summary>Sets the shim of Labeled.get_Label()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.LabelSetString">
+            <summary>Sets the shim of Labeled.set_Label(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.TargetGet">
+            <summary>Sets the shim of Labeled.get_Target()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.TargetSetIEventLog">
+            <summary>Sets the shim of Labeled.set_Target(IEventLog value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.AllInstances.AddEventLogTypeString">
+            <summary>Sets the shim of Labeled.Add(EventLogType type, String msg)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.AllInstances.LabelGet">
+            <summary>Sets the shim of Labeled.get_Label()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.AllInstances.LabelSetString">
+            <summary>Sets the shim of Labeled.set_Label(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.AllInstances.TargetGet">
+            <summary>Sets the shim of Labeled.get_Target()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimLabeled.AllInstances.TargetSetIEventLog">
+            <summary>Sets the shim of Labeled.set_Target(IEventLog value)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut">
+            <summary>Shim type of DevChallenge.Server.Model.EventLog.StdOut</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.#ctor(DevChallenge.Server.Model.EventLog.StdOut)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.Bind(DevChallenge.Server.Model.IEventLog)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.AddEventLogTypeString">
+            <summary>Sets the shim of StdOut.Add(EventLogType type, String msg)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.Constructor">
+            <summary>Sets the shim of StdOut.StdOut()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.ShimStdOut.AllInstances.AddEventLogTypeString">
+            <summary>Sets the shim of StdOut.Add(EventLogType type, String msg)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.StubCollection">
+            <summary>Stub type of DevChallenge.Server.Model.EventLog.Collection</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.StubCollection.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.StubCollection.InitializeStub">
+            <summary>Initializes a new instance of type StubCollection</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubCollection.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubCollection.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubCollection.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.StubLabeled">
+            <summary>Stub type of DevChallenge.Server.Model.EventLog.Labeled</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.StubLabeled.#ctor(System.String,DevChallenge.Server.Model.IEventLog)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.StubLabeled.InitializeStub">
+            <summary>Initializes a new instance of type StubLabeled</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubLabeled.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubLabeled.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubLabeled.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.EventLog.Fakes.StubStdOut">
+            <summary>Stub type of DevChallenge.Server.Model.EventLog.StdOut</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.StubStdOut.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.EventLog.Fakes.StubStdOut.InitializeStub">
+            <summary>Initializes a new instance of type StubStdOut</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubStdOut.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubStdOut.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.EventLog.Fakes.StubStdOut.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
         <member name="T:DevChallenge.Server.Model.Fakes.StubIAgent">
             <summary>Stub type of DevChallenge.Server.Model.IAgent</summary>
         </member>
@@ -904,29 +1078,35 @@
         <member name="P:DevChallenge.Server.Model.Fakes.StubIAgent.dcs::DevChallenge#Server#Model#IAgent#Revision">
             <summary>Sets the stub of IAgent.get_Revision()</summary>
         </member>
-        <member name="T:DevChallenge.Server.Model.Fakes.StubIAgentEntryPoint">
-            <summary>Stub type of DevChallenge.Server.Model.IAgentEntryPoint</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Model.Fakes.StubIAgentEntryPoint.#ctor">
-            <summary>Initializes a new instance of type StubIAgentEntryPoint</summary>
-        </member>
         <member name="T:DevChallenge.Server.Model.Fakes.StubIContext">
             <summary>Stub type of DevChallenge.Server.Model.IContext</summary>
         </member>
         <member name="M:DevChallenge.Server.Model.Fakes.StubIContext.#ctor">
             <summary>Initializes a new instance of type StubIContext</summary>
         </member>
-        <member name="F:DevChallenge.Server.Model.Fakes.StubIContext.EntryPointsGet">
-            <summary>Sets the stub of IContext.get_EntryPoints()</summary>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIContext.AgentSourcesGet">
+            <summary>Sets the stub of IContext.get_AgentSources()</summary>
         </member>
         <member name="F:DevChallenge.Server.Model.Fakes.StubIContext.ScenarioManagerGet">
             <summary>Sets the stub of IContext.get_ScenarioManager()</summary>
         </member>
-        <member name="P:DevChallenge.Server.Model.Fakes.StubIContext.dcs::DevChallenge#Server#Model#IContext#EntryPoints">
-            <summary>Sets the stub of IContext.get_EntryPoints()</summary>
+        <member name="P:DevChallenge.Server.Model.Fakes.StubIContext.dcs::DevChallenge#Server#Model#IContext#AgentSources">
+            <summary>Sets the stub of IContext.get_AgentSources()</summary>
         </member>
         <member name="P:DevChallenge.Server.Model.Fakes.StubIContext.dcs::DevChallenge#Server#Model#IContext#ScenarioManager">
             <summary>Sets the stub of IContext.get_ScenarioManager()</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Fakes.StubIEventLog">
+            <summary>Stub type of DevChallenge.Server.Model.IEventLog</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIEventLog.#ctor">
+            <summary>Initializes a new instance of type StubIEventLog</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Fakes.StubIEventLog.AddEventLogTypeString">
+            <summary>Sets the stub of IEventLog.Add(EventLogType type, String msg)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Fakes.StubIEventLog.dcs::DevChallenge#Server#Model#IEventLog#Add(DevChallenge.Server.Model.EventLogType,System.String)">
+            <summary>Sets the stub of IEventLog.Add(EventLogType type, String msg)</summary>
         </member>
         <member name="T:DevChallenge.Server.Model.Fakes.StubIInstance">
             <summary>Stub type of DevChallenge.Server.Model.IInstance</summary>
@@ -951,36 +1131,6 @@
         </member>
         <member name="P:DevChallenge.Server.Model.Fakes.StubIInstance.dcs::DevChallenge#Server#Model#IInstance#Scenario">
             <summary>Sets the stub of IInstance.get_Scenario()</summary>
-        </member>
-        <member name="T:DevChallenge.Server.Model.Fakes.StubIInstanceLog">
-            <summary>Stub type of DevChallenge.Server.Model.IInstanceLog</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.#ctor">
-            <summary>Initializes a new instance of type StubIInstanceLog</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#Finish(System.Xml.Linq.XElement)">
-            <summary>Sets the stub of IInstanceLog.Finish(XElement finishlog)</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#SetScore(DevChallenge.Server.Model.IAgent,System.Nullable{System.Int32})">
-            <summary>Sets the stub of IInstanceLog.SetScore(IAgent agent, Nullable`1&lt;Int32&gt; score)</summary>
-        </member>
-        <member name="M:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#Start">
-            <summary>Sets the stub of IInstanceLog.Start()</summary>
-        </member>
-        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.FinishXElement">
-            <summary>Sets the stub of IInstanceLog.Finish(XElement finishlog)</summary>
-        </member>
-        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.InstanceGet">
-            <summary>Sets the stub of IInstanceLog.get_Instance()</summary>
-        </member>
-        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.SetScoreIAgentNullableOfInt32">
-            <summary>Sets the stub of IInstanceLog.SetScore(IAgent agent, Nullable`1&lt;Int32&gt; score)</summary>
-        </member>
-        <member name="F:DevChallenge.Server.Model.Fakes.StubIInstanceLog.Start">
-            <summary>Sets the stub of IInstanceLog.Start()</summary>
-        </member>
-        <member name="P:DevChallenge.Server.Model.Fakes.StubIInstanceLog.dcs::DevChallenge#Server#Model#IInstanceLog#Instance">
-            <summary>Sets the stub of IInstanceLog.get_Instance()</summary>
         </member>
         <member name="T:DevChallenge.Server.Model.Fakes.StubIScenario">
             <summary>Stub type of DevChallenge.Server.Model.IScenario</summary>
@@ -1179,6 +1329,36 @@
         </member>
         <member name="F:DevChallenge.Server.Model.Fakes.StubIUserManager.RegisterUserCommandsIConnection">
             <summary>Sets the stub of IUserManager.RegisterUserCommands(IConnection connection)</summary>
+        </member>
+        <member name="T:DevChallenge.Server.Model.Instance.Fakes.StubILog">
+            <summary>Stub type of DevChallenge.Server.Model.Instance.ILog</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Instance.Fakes.StubILog.#ctor">
+            <summary>Initializes a new instance of type StubILog</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Instance.Fakes.StubILog.dcs::DevChallenge#Server#Model#Instance#ILog#Finish(System.Xml.Linq.XElement)">
+            <summary>Sets the stub of ILog.Finish(XElement finishlog)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Instance.Fakes.StubILog.dcs::DevChallenge#Server#Model#Instance#ILog#SetScore(DevChallenge.Server.Model.IAgent,System.Nullable{System.Int32})">
+            <summary>Sets the stub of ILog.SetScore(IAgent agent, Nullable`1&lt;Int32&gt; score)</summary>
+        </member>
+        <member name="M:DevChallenge.Server.Model.Instance.Fakes.StubILog.dcs::DevChallenge#Server#Model#Instance#ILog#Start">
+            <summary>Sets the stub of ILog.Start()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Instance.Fakes.StubILog.FinishXElement">
+            <summary>Sets the stub of ILog.Finish(XElement finishlog)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Instance.Fakes.StubILog.InstanceGet">
+            <summary>Sets the stub of ILog.get_Instance()</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Instance.Fakes.StubILog.SetScoreIAgentNullableOfInt32">
+            <summary>Sets the stub of ILog.SetScore(IAgent agent, Nullable`1&lt;Int32&gt; score)</summary>
+        </member>
+        <member name="F:DevChallenge.Server.Model.Instance.Fakes.StubILog.Start">
+            <summary>Sets the stub of ILog.Start()</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Model.Instance.Fakes.StubILog.dcs::DevChallenge#Server#Model#Instance#ILog#Instance">
+            <summary>Sets the stub of ILog.get_Instance()</summary>
         </member>
         <member name="T:DevChallenge.Server.db.Fakes.ShimAgentRecord">
             <summary>Shim type of DevChallenge.Server.db.AgentRecord</summary>

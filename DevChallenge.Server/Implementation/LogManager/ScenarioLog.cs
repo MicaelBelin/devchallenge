@@ -46,7 +46,7 @@ namespace DevChallenge.Server.Implementation
                 get { return ScenarioDbObject.Code; }
             }
 
-            public IInstanceLog CreateInstanceLog(IInstance instance)
+            public Model.Instance.ILog CreateInstanceLog(IInstance instance)
             {
                 return new InstanceLog(this, instance);
             }

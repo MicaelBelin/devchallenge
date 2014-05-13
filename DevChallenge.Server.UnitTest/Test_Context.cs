@@ -23,13 +23,13 @@ namespace Test_DevChallengeServer
                     gotevent = true;
                 };
 
-            var entrypoint = new DevChallenge.Server.Model.Fakes.StubIAgentEntryPoint();
+            var source = new DevChallenge.Server.Model.Agent.Fakes.StubISource();
 
 
-            var c = new DevChallenge.Server.Implementation.Context(scenariomanager, Enumerable.Repeat(entrypoint,1));
+            var c = new DevChallenge.Server.Implementation.Context(scenariomanager, Enumerable.Repeat(source,1));
 
 
-            entrypoint.AgentSpawnedEvent(agent);
+            source.AgentSpawnedEvent(agent);
 
             Assert.AreEqual(true, gotevent);
 

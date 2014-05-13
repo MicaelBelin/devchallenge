@@ -9,7 +9,7 @@ namespace DevChallenge.Server.Implementation
 {
     public partial class LogManager
     {
-        class InstanceLog : IInstanceLog
+        class InstanceLog : Model.Instance.ILog
         {
             public ScenarioLog ScenarioLog {get; private set;}
             public db.DevChallengeDataContext DataContext { get { return ScenarioLog.DataContext; } }

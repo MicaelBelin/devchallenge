@@ -53,7 +53,7 @@ namespace DevChallenge.Server.Implementation
             public event Action<IInstance> Started;
             public event Action<IInstance> Finished;
 
-            public IInstanceLog Log {get;set;}
+            public Model.Instance.ILog Log {get;set;}
         }
     }
 }
