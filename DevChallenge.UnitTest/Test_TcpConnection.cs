@@ -28,20 +28,20 @@ namespace Test_DevChallenge
         }
 
 
-        public Tuple<DevChallenge.Implementation.TcpConnection, DevChallenge.Implementation.TcpConnection> CreatePair()
+        public Tuple<DevChallenge.Connection.Tcp, DevChallenge.Connection.Tcp> CreatePair()
         {
 
 
 
-            var server = Task<DevChallenge.Implementation.TcpConnection>.Run(() =>
+            var server = Task<DevChallenge.Connection.Tcp>.Run(() =>
             {
                 var c = listener.AcceptTcpClient();
-                return new DevChallenge.Implementation.TcpConnection(c);
+                return new DevChallenge.Connection.Tcp(c);
             });
 
-            var client = new DevChallenge.Implementation.TcpConnection(new System.Net.Sockets.TcpClient("localhost", port));
+            var client = new DevChallenge.Connection.Tcp(new System.Net.Sockets.TcpClient("localhost", port));
 
-            return new Tuple<DevChallenge.Implementation.TcpConnection, DevChallenge.Implementation.TcpConnection>(server.Result, client);
+            return new Tuple<DevChallenge.Connection.Tcp, DevChallenge.Connection.Tcp>(server.Result, client);
 
         }
 
@@ -58,7 +58,7 @@ namespace Test_DevChallenge
             {
                 try
                 {
-                    var n = DevChallenge.Implementation.TcpConnection.Notification.Get(e);
+                    var n = DevChallenge.Connection.Tcp.Notification.Get(e);
                     Assert.AreEqual("hej", n.Message.Name);
                 }
                 catch (Exception)

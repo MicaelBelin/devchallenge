@@ -6,9 +6,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DevChallenge.Implementation
+namespace DevChallenge.Connection
 {
-    public partial class AbstractConnection
+    public partial class Abstract
     {
         public interface IRunLoopSource
         {

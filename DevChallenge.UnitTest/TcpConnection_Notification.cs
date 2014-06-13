@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Xml.Linq;
-using DevChallenge.Implementation;
+using DevChallenge;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Test_DevChallenge
@@ -12,7 +12,7 @@ namespace Test_DevChallenge
         public void MessageIntegrity()
         {
             var message = new XElement("hej");
-            var n = new TcpConnection.Notification(message);
+            var n = new DevChallenge.Connection.Tcp.Notification(message);
             Assert.AreEqual(message, n.Message);
         }
 
@@ -20,7 +20,7 @@ namespace Test_DevChallenge
         public void GetWithCorrectTypeShouldNotThrow()
         {
             var raw = new XElement("notification", new XElement("themessage", "Hej!"));
-            TcpConnection.Notification.Get(raw);
+            DevChallenge.Connection.Tcp.Notification.Get(raw);
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace Test_DevChallenge
         public void GetWithInCorrectTypeShouldThrow()
         {
             var raw = new XElement("comment", new XElement("themessage", "Hej!"));
-            TcpConnection.Notification.Get(raw);
+            DevChallenge.Connection.Tcp.Notification.Get(raw);
         }
 
 

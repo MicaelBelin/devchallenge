@@ -6,9 +6,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DevChallenge.Implementation
+namespace DevChallenge.Connection
 {
-    public abstract partial class AbstractConnection : IConnection
+    public abstract partial class Abstract : IConnection
     {
         protected abstract IEnumerable<XElement> ReadXmlItems();
         protected abstract void SendXmlItem(XElement e);
@@ -30,7 +30,7 @@ namespace DevChallenge.Implementation
             SendXmlItem(e);
         }
 
-        public AbstractConnection()
+        public Abstract()
         {
             collector = new Collector(ReadXmlItems);
             runloop = new RunLoop(collector, DispatchMessage);

@@ -9,7 +9,7 @@ namespace Test_DevChallenge
     public class Test_AbstractConnection_RunLoop
     {
 
-        class Source : DevChallenge.Implementation.AbstractConnection.IRunLoopSource
+        class Source : DevChallenge.Connection.Abstract.IRunLoopSource
         {
 
             public Source(bool doclose)
@@ -52,7 +52,7 @@ namespace Test_DevChallenge
         public void ReadItemsThenFinish()
         {
             int readitems = 0;
-            var runloop = new DevChallenge.Implementation.AbstractConnection.RunLoop(new Source(true), e => { readitems++; });
+            var runloop = new DevChallenge.Connection.Abstract.RunLoop(new Source(true), e => { readitems++; });
             try
             {
                 runloop.Exec();
@@ -71,7 +71,7 @@ namespace Test_DevChallenge
         public void ExecWhile()
         {
             int readitems = 0;
-            var runloop = new DevChallenge.Implementation.AbstractConnection.RunLoop(new Source(true), e => { readitems++; });
+            var runloop = new DevChallenge.Connection.Abstract.RunLoop(new Source(true), e => { readitems++; });
             runloop.ExecWhile(() => readitems != 2);
             Assert.AreEqual(2, readitems);
         }
@@ -80,7 +80,7 @@ namespace Test_DevChallenge
         [ExpectedException(typeof(TimeoutException))]
         public void Timeout()
         {
-            var runloop = new DevChallenge.Implementation.AbstractConnection.RunLoop(new Source(false), e => { });
+            var runloop = new DevChallenge.Connection.Abstract.RunLoop(new Source(false), e => { });
             runloop.Exec(TimeSpan.FromMilliseconds(1));
         }
 

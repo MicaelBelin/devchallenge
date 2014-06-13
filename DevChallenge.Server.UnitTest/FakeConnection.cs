@@ -41,27 +41,27 @@ namespace DevChallenge.Fakes
 
             this.CreateRequestXElement = msg =>
                 {
-                    return new DevChallenge.Implementation.TcpConnection.Request(msg);
+                    return new DevChallenge.Connection.Tcp.Request(msg);
                 };
             this.CreateNotificationXElement = msg =>
                 {
-                    return new DevChallenge.Implementation.TcpConnection.Notification(msg);
+                    return new DevChallenge.Connection.Tcp.Notification(msg);
                 };
             this.CreateResponseXElementString = (msg,id) =>
                 {
-                    return new DevChallenge.Implementation.TcpConnection.Response(msg,id);
+                    return new DevChallenge.Connection.Tcp.Response(msg,id);
                 };
             this.GetNotificationXElement = raw =>
             {
-                return DevChallenge.Implementation.TcpConnection.Notification.Get(raw);
+                return DevChallenge.Connection.Tcp.Notification.Get(raw);
             };
             this.GetRequestXElement = raw =>
             {
-                return DevChallenge.Implementation.TcpConnection.Request.Get(raw);
+                return DevChallenge.Connection.Tcp.Request.Get(raw);
             };
             this.GetResponseXElement = raw =>
             {
-                return DevChallenge.Implementation.TcpConnection.Response.Get(raw);
+                return DevChallenge.Connection.Tcp.Response.Get(raw);
             };
         }
     }

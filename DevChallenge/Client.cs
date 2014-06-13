@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DevChallenge.Implementation
+namespace DevChallenge
 {
     public class Client : IClient
     {
@@ -23,7 +23,7 @@ namespace DevChallenge.Implementation
         public void RegisterUser(string username, string password, string fullname, string email)
         {
             if (String.IsNullOrWhiteSpace(ServerName) || ServerPort == 0) throw new UninitializedClientException();
-            var c = new TcpConnection(new System.Net.Sockets.TcpClient(ServerName, ServerPort));
+            var c = new Connection.Tcp(new System.Net.Sockets.TcpClient(ServerName, ServerPort));
             ApplyMonitors(c);
 
             var ret = c.SendRequest(new XElement("user.register",
@@ -55,7 +55,7 @@ namespace DevChallenge.Implementation
         public IConnection Login(string username, string password, string agentname, int agentrevision = 0)
         {
             if (String.IsNullOrWhiteSpace(ServerName) || ServerPort == 0) throw new UninitializedClientException();
-            var c = new TcpConnection(new System.Net.Sockets.TcpClient(ServerName, ServerPort));
+            var c = new Connection.Tcp(new System.Net.Sockets.TcpClient(ServerName, ServerPort));
             ApplyMonitors(c);
 
             c.WaitForNotification(notification =>

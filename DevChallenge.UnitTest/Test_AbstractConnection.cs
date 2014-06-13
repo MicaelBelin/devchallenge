@@ -11,7 +11,7 @@ namespace Test_DevChallenge
     public class Test_AbstractConnection
     {
 
-        class DelegatedConnection : DevChallenge.Implementation.AbstractConnection
+        class DelegatedConnection : DevChallenge.Connection.Abstract
         {
             protected override System.Collections.Generic.IEnumerable<System.Xml.Linq.XElement> ReadXmlItems()
             {
@@ -111,8 +111,8 @@ namespace Test_DevChallenge
 
         IEnumerable<XElement> WaitWithoutRunningExecQueue()
         {
-            yield return new DevChallenge.Implementation.AbstractConnection.Notification(new XElement("notification1")).Serialized;
-            yield return new DevChallenge.Implementation.AbstractConnection.Notification(new XElement("notification2")).Serialized;
+            yield return new DevChallenge.Connection.Abstract.Notification(new XElement("notification1")).Serialized;
+            yield return new DevChallenge.Connection.Abstract.Notification(new XElement("notification2")).Serialized;
         }
 
         [TestMethod]

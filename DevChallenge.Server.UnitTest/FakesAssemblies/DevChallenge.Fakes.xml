@@ -4,6 +4,666 @@
         <name>DevChallenge.Fakes</name>
     </assembly>
     <members>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract">
+            <summary>Shim type of DevChallenge.Connection.Abstract</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.#ctor(DevChallenge.Connection.Abstract)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.Bind(DevChallenge.IConnection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.Constructor">
+            <summary>Sets the shim of Abstract.Abstract()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.CreateNotificationXElement">
+            <summary>Sets the shim of Abstract.CreateNotification(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.CreateRequestXElement">
+            <summary>Sets the shim of Abstract.CreateRequest(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.CreateResponseXElementString">
+            <summary>Sets the shim of Abstract.CreateResponse(XElement message, String requestid)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.DispatchMessageXElement">
+            <summary>Sets the shim of Abstract.DispatchMessage(XElement msg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.Dispose">
+            <summary>Sets the shim of Abstract.Dispose()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.Exec">
+            <summary>Sets the shim of Abstract.Exec()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ExecTimeSpan">
+            <summary>Sets the shim of Abstract.Exec(TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ExecWhileFuncOfBoolean">
+            <summary>Sets the shim of Abstract.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ExecWhileFuncOfBooleanTimeSpan">
+            <summary>Sets the shim of Abstract.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.GetNotificationXElement">
+            <summary>Sets the shim of Abstract.GetNotification(XElement rawmsg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.GetRequestXElement">
+            <summary>Sets the shim of Abstract.GetRequest(XElement rawmsg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.GetResponseXElement">
+            <summary>Sets the shim of Abstract.GetResponse(XElement rawmsg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.PostRequestXElement">
+            <summary>Sets the shim of Abstract.PostRequest(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.RegisterFilterFuncOfXElementFilterResponse">
+            <summary>Sets the shim of Abstract.RegisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.RegisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Abstract.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.RunUntilClosed">
+            <summary>Sets the shim of Abstract.RunUntilClosed()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.SendNotificationXElement">
+            <summary>Sets the shim of Abstract.SendNotification(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.SendRequestXElement">
+            <summary>Sets the shim of Abstract.SendRequest(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.SendRequestXElementTimeSpan">
+            <summary>Sets the shim of Abstract.SendRequest(XElement message, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.SendResponseXElementString">
+            <summary>Sets the shim of Abstract.SendResponse(XElement response, String requestid)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.SendXElement">
+            <summary>Sets the shim of Abstract.Send(XElement e)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.StartCollector">
+            <summary>Sets the shim of Abstract.StartCollector()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.UnregisterFilterFuncOfXElementFilterResponse">
+            <summary>Sets the shim of Abstract.UnregisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.UnregisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Abstract.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitForNotificationFuncOfINotificationFilterResponse">
+            <summary>Sets the shim of Abstract.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitForNotificationFuncOfINotificationFilterResponseTimeSpan">
+            <summary>Sets the shim of Abstract.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitForRequestFuncOfIRequestFilterResponse">
+            <summary>Sets the shim of Abstract.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitForRequestFuncOfIRequestFilterResponseTimeSpan">
+            <summary>Sets the shim of Abstract.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitUntilEventWaitHandle">
+            <summary>Sets the shim of Abstract.WaitUntil(EventWaitHandle handle)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitUntilEventWaitHandleTimeSpan">
+            <summary>Sets the shim of Abstract.WaitUntil(EventWaitHandle handle, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitUntilFilterMatchFuncOfXElementFilterResponse">
+            <summary>Sets the shim of Abstract.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.WaitUntilFilterMatchFuncOfXElementFilterResponseTimeSpan">
+            <summary>Sets the shim of Abstract.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter, TimeSpan timeout)</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.CreateNotificationXElement">
+            <summary>Sets the shim of Abstract.CreateNotification(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.CreateRequestXElement">
+            <summary>Sets the shim of Abstract.CreateRequest(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.CreateResponseXElementString">
+            <summary>Sets the shim of Abstract.CreateResponse(XElement message, String requestid)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.DispatchMessageXElement">
+            <summary>Sets the shim of Abstract.DispatchMessage(XElement msg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.Dispose">
+            <summary>Sets the shim of Abstract.Dispose()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.Exec">
+            <summary>Sets the shim of Abstract.Exec()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.ExecTimeSpan">
+            <summary>Sets the shim of Abstract.Exec(TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.ExecWhileFuncOfBoolean">
+            <summary>Sets the shim of Abstract.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.ExecWhileFuncOfBooleanTimeSpan">
+            <summary>Sets the shim of Abstract.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.GetNotificationXElement">
+            <summary>Sets the shim of Abstract.GetNotification(XElement rawmsg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.GetRequestXElement">
+            <summary>Sets the shim of Abstract.GetRequest(XElement rawmsg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.GetResponseXElement">
+            <summary>Sets the shim of Abstract.GetResponse(XElement rawmsg)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.PostRequestXElement">
+            <summary>Sets the shim of Abstract.PostRequest(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.RegisterFilterFuncOfXElementFilterResponse">
+            <summary>Sets the shim of Abstract.RegisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.RegisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Abstract.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.RunUntilClosed">
+            <summary>Sets the shim of Abstract.RunUntilClosed()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.SendNotificationXElement">
+            <summary>Sets the shim of Abstract.SendNotification(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.SendRequestXElement">
+            <summary>Sets the shim of Abstract.SendRequest(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.SendRequestXElementTimeSpan">
+            <summary>Sets the shim of Abstract.SendRequest(XElement message, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.SendResponseXElementString">
+            <summary>Sets the shim of Abstract.SendResponse(XElement response, String requestid)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.SendXElement">
+            <summary>Sets the shim of Abstract.Send(XElement e)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.StartCollector">
+            <summary>Sets the shim of Abstract.StartCollector()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.UnregisterFilterFuncOfXElementFilterResponse">
+            <summary>Sets the shim of Abstract.UnregisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.UnregisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Abstract.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitForNotificationFuncOfINotificationFilterResponse">
+            <summary>Sets the shim of Abstract.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitForNotificationFuncOfINotificationFilterResponseTimeSpan">
+            <summary>Sets the shim of Abstract.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitForRequestFuncOfIRequestFilterResponse">
+            <summary>Sets the shim of Abstract.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitForRequestFuncOfIRequestFilterResponseTimeSpan">
+            <summary>Sets the shim of Abstract.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitUntilEventWaitHandle">
+            <summary>Sets the shim of Abstract.WaitUntil(EventWaitHandle handle)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitUntilEventWaitHandleTimeSpan">
+            <summary>Sets the shim of Abstract.WaitUntil(EventWaitHandle handle, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitUntilFilterMatchFuncOfXElementFilterResponse">
+            <summary>Sets the shim of Abstract.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.AllInstances.WaitUntilFilterMatchFuncOfXElementFilterResponseTimeSpan">
+            <summary>Sets the shim of Abstract.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter, TimeSpan timeout)</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector">
+            <summary>Shim type of DevChallenge.Connection.Abstract+Collector</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.#ctor(DevChallenge.Connection.Abstract.Collector)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.Bind(DevChallenge.Connection.Abstract.IRunLoopSource)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.CollectorTaskGet">
+            <summary>Sets the shim of Collector.get_CollectorTask()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.CollectorTaskSetTask">
+            <summary>Sets the shim of Collector.set_CollectorTask(Task value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.ConstructorFuncOfIEnumerableOfXElement">
+            <summary>Sets the shim of Collector.Collector(Func`1&lt;IEnumerable`1&lt;XElement&gt;&gt; itempoolfunc)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.GetItem">
+            <summary>Sets the shim of Collector.GetItem()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.GetItemTimeSpan">
+            <summary>Sets the shim of Collector.GetItem(TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.HasAvailableItemGet">
+            <summary>Sets the shim of Collector.get_HasAvailableItem()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.IsRunningGet">
+            <summary>Sets the shim of Collector.get_IsRunning()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.Start">
+            <summary>Sets the shim of Collector.Start()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector._Startb__21">
+            <summary>Sets the shim of Collector.&lt;Start&gt;b__21()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances.CollectorTaskGet">
+            <summary>Sets the shim of Collector.get_CollectorTask()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances.CollectorTaskSetTask">
+            <summary>Sets the shim of Collector.set_CollectorTask(Task value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances.GetItem">
+            <summary>Sets the shim of Collector.GetItem()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances.GetItemTimeSpan">
+            <summary>Sets the shim of Collector.GetItem(TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances.HasAvailableItemGet">
+            <summary>Sets the shim of Collector.get_HasAvailableItem()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances.IsRunningGet">
+            <summary>Sets the shim of Collector.get_IsRunning()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances.Start">
+            <summary>Sets the shim of Collector.Start()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimCollector.AllInstances._Startb__21">
+            <summary>Sets the shim of Collector.&lt;Start&gt;b__21()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification">
+            <summary>Shim type of DevChallenge.Connection.Abstract+Notification</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.#ctor(DevChallenge.Connection.Abstract.Notification)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.Bind(DevChallenge.INotification)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.ConstructorXElement">
+            <summary>Sets the shim of Notification.Notification(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.GetXElement">
+            <summary>Sets the shim of Notification.Get(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.MessageGet">
+            <summary>Sets the shim of Notification.get_Message()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.MessageSetXElement">
+            <summary>Sets the shim of Notification.set_Message(XElement value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.SerializedGet">
+            <summary>Sets the shim of Notification.get_Serialized()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.AllInstances.MessageGet">
+            <summary>Sets the shim of Notification.get_Message()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.AllInstances.MessageSetXElement">
+            <summary>Sets the shim of Notification.set_Message(XElement value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimNotification.AllInstances.SerializedGet">
+            <summary>Sets the shim of Notification.get_Serialized()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest">
+            <summary>Shim type of DevChallenge.Connection.Abstract+Request</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.#ctor(DevChallenge.Connection.Abstract.Request)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.Bind(DevChallenge.IRequest)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.ConstructorXElement">
+            <summary>Sets the shim of Request.Request(XElement message)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.ConstructorXElementString">
+            <summary>Sets the shim of Request.Request(XElement message, String requestid)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.GetXElement">
+            <summary>Sets the shim of Request.Get(XElement serialized)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.MessageGet">
+            <summary>Sets the shim of Request.get_Message()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.MessageSetXElement">
+            <summary>Sets the shim of Request.set_Message(XElement value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.NextRequestId">
+            <summary>Sets the shim of Request.NextRequestId()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.RequestIdGet">
+            <summary>Sets the shim of Request.get_RequestId()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.RequestIdSetString">
+            <summary>Sets the shim of Request.set_RequestId(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.SerializedGet">
+            <summary>Sets the shim of Request.get_Serialized()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.StaticConstructor">
+            <summary>Sets the shim of Request.Request()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.AllInstances.MessageGet">
+            <summary>Sets the shim of Request.get_Message()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.AllInstances.MessageSetXElement">
+            <summary>Sets the shim of Request.set_Message(XElement value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.AllInstances.RequestIdGet">
+            <summary>Sets the shim of Request.get_RequestId()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.AllInstances.RequestIdSetString">
+            <summary>Sets the shim of Request.set_RequestId(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRequest.AllInstances.SerializedGet">
+            <summary>Sets the shim of Request.get_Serialized()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse">
+            <summary>Shim type of DevChallenge.Connection.Abstract+Response</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.#ctor(DevChallenge.Connection.Abstract.Response)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.Bind(DevChallenge.IResponse)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.ConstructorXElementString">
+            <summary>Sets the shim of Response.Response(XElement message, String requestid)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.GetXElement">
+            <summary>Sets the shim of Response.Get(XElement serialized)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.GetXElementString">
+            <summary>Sets the shim of Response.Get(XElement serialized, String requestid)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.MessageGet">
+            <summary>Sets the shim of Response.get_Message()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.MessageSetXElement">
+            <summary>Sets the shim of Response.set_Message(XElement value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.RequestIdGet">
+            <summary>Sets the shim of Response.get_RequestId()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.RequestIdSetString">
+            <summary>Sets the shim of Response.set_RequestId(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.SerializedGet">
+            <summary>Sets the shim of Response.get_Serialized()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.AllInstances.MessageGet">
+            <summary>Sets the shim of Response.get_Message()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.AllInstances.MessageSetXElement">
+            <summary>Sets the shim of Response.set_Message(XElement value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.AllInstances.RequestIdGet">
+            <summary>Sets the shim of Response.get_RequestId()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.AllInstances.RequestIdSetString">
+            <summary>Sets the shim of Response.set_RequestId(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimResponse.AllInstances.SerializedGet">
+            <summary>Sets the shim of Response.get_Serialized()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop">
+            <summary>Shim type of DevChallenge.Connection.Abstract+RunLoop</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.#ctor(DevChallenge.Connection.Abstract.RunLoop)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.ConstructorAbstractIRunLoopSourceActionOfXElement">
+            <summary>Sets the shim of RunLoop.RunLoop(IRunLoopSource source, Action`1&lt;XElement&gt; onnewitem)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.Exec">
+            <summary>Sets the shim of RunLoop.Exec()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.ExecThreadGet">
+            <summary>Sets the shim of RunLoop.get_ExecThread()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.ExecTimeSpan">
+            <summary>Sets the shim of RunLoop.Exec(TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.ExecWhileFuncOfBoolean">
+            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.ExecWhileFuncOfBooleanTimeSpan">
+            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop._Execb__23">
+            <summary>Sets the shim of RunLoop.&lt;Exec&gt;b__23()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.AllInstances.Exec">
+            <summary>Sets the shim of RunLoop.Exec()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.AllInstances.ExecThreadGet">
+            <summary>Sets the shim of RunLoop.get_ExecThread()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.AllInstances.ExecTimeSpan">
+            <summary>Sets the shim of RunLoop.Exec(TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.AllInstances.ExecWhileFuncOfBoolean">
+            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimAbstract.ShimRunLoop.AllInstances.ExecWhileFuncOfBooleanTimeSpan">
+            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimTcp">
+            <summary>Shim type of DevChallenge.Connection.Tcp</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimTcp.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimTcp.#ctor(DevChallenge.Connection.Tcp)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimTcp.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimTcp.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimTcp.Bind(DevChallenge.IConnection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimTcp.Bind(DevChallenge.ITcpConnection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.ShimTcp.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.Close">
+            <summary>Sets the shim of Tcp.Close()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.ConstructorTcpClient">
+            <summary>Sets the shim of Tcp.Tcp(TcpClient c)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.ReadXmlItems">
+            <summary>Sets the shim of Tcp.ReadXmlItems()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.SendXmlItemXElement">
+            <summary>Sets the shim of Tcp.SendXmlItem(XElement e)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.TcpClientGet">
+            <summary>Sets the shim of Tcp.get_TcpClient()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.ShimTcp.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.AllInstances.Close">
+            <summary>Sets the shim of Tcp.Close()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.AllInstances.ReadXmlItems">
+            <summary>Sets the shim of Tcp.ReadXmlItems()</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.AllInstances.SendXmlItemXElement">
+            <summary>Sets the shim of Tcp.SendXmlItem(XElement e)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.ShimTcp.AllInstances.TcpClientGet">
+            <summary>Sets the shim of Tcp.get_TcpClient()</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.StubAbstract">
+            <summary>Stub type of DevChallenge.Connection.Abstract</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubAbstract.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubAbstract.Close">
+            <summary>Sets the stub of Abstract.Close()</summary>
+        </member>
+        <member name="F:DevChallenge.Connection.Fakes.StubAbstract.Close01">
+            <summary>Sets the stub of Abstract.Close()</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubAbstract.InitializeStub">
+            <summary>Initializes a new instance of type StubAbstract</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubAbstract.ReadXmlItems">
+            <summary>Sets the stub of Abstract.ReadXmlItems()</summary>
+        </member>
+        <member name="F:DevChallenge.Connection.Fakes.StubAbstract.ReadXmlItems01">
+            <summary>Sets the stub of Abstract.ReadXmlItems()</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubAbstract.SendXmlItem(System.Xml.Linq.XElement)">
+            <summary>Sets the stub of Abstract.SendXmlItem(XElement e)</summary>
+        </member>
+        <member name="F:DevChallenge.Connection.Fakes.StubAbstract.SendXmlItemXElement">
+            <summary>Sets the stub of Abstract.SendXmlItem(XElement e)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.StubAbstract.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.StubAbstract.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.StubAbstract.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DevChallenge.Connection.Fakes.StubTcp">
+            <summary>Stub type of DevChallenge.Connection.Tcp</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubTcp.#ctor(System.Net.Sockets.TcpClient)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubTcp.Close">
+            <summary>Sets the stub of Tcp.Close()</summary>
+        </member>
+        <member name="F:DevChallenge.Connection.Fakes.StubTcp.Close01">
+            <summary>Sets the stub of Tcp.Close()</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubTcp.InitializeStub">
+            <summary>Initializes a new instance of type StubTcp</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubTcp.ReadXmlItems">
+            <summary>Sets the stub of Tcp.ReadXmlItems()</summary>
+        </member>
+        <member name="F:DevChallenge.Connection.Fakes.StubTcp.ReadXmlItems01">
+            <summary>Sets the stub of Tcp.ReadXmlItems()</summary>
+        </member>
+        <member name="M:DevChallenge.Connection.Fakes.StubTcp.SendXmlItem(System.Xml.Linq.XElement)">
+            <summary>Sets the stub of Tcp.SendXmlItem(XElement e)</summary>
+        </member>
+        <member name="F:DevChallenge.Connection.Fakes.StubTcp.SendXmlItemXElement">
+            <summary>Sets the stub of Tcp.SendXmlItem(XElement e)</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.StubTcp.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.StubTcp.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Connection.Fakes.StubTcp.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
         <member name="T:DevChallenge.ConnectionInterface.Fakes.ShimLobby">
             <summary>Shim type of DevChallenge.ConnectionInterface.Lobby</summary>
         </member>
@@ -76,6 +736,174 @@
         <member name="P:DevChallenge.ConnectionInterface.Fakes.StubLobby.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
         </member>
+        <member name="T:DevChallenge.Fakes.ShimClient">
+            <summary>Shim type of DevChallenge.Client</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.#ctor(DevChallenge.Client)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.Bind(DevChallenge.IClient)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ApplyMonitorsIConnection">
+            <summary>Sets the shim of Client.ApplyMonitors(IConnection conn)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ConstructorStringInt32">
+            <summary>Sets the shim of Client.Client(String servername, Int32 port)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.LoginStringStringStringInt32">
+            <summary>Sets the shim of Client.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.RegisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.RegisterUserStringStringStringString">
+            <summary>Sets the shim of Client.RegisterUser(String username, String password, String fullname, String email)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ServerNameGet">
+            <summary>Sets the shim of Client.get_ServerName()</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ServerNameSetString">
+            <summary>Sets the shim of Client.set_ServerName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ServerPortGet">
+            <summary>Sets the shim of Client.get_ServerPort()</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ServerPortSetInt32">
+            <summary>Sets the shim of Client.set_ServerPort(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.StaticConstructor">
+            <summary>Sets the shim of Client.Client()</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.UnregisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient._Loginb__0INotification">
+            <summary>Sets the shim of Client.&lt;Login&gt;b__0(INotification notification)</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.ShimClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.ApplyMonitorsIConnection">
+            <summary>Sets the shim of Client.ApplyMonitors(IConnection conn)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.LoginStringStringStringInt32">
+            <summary>Sets the shim of Client.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.RegisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.RegisterUserStringStringStringString">
+            <summary>Sets the shim of Client.RegisterUser(String username, String password, String fullname, String email)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.ServerNameGet">
+            <summary>Sets the shim of Client.get_ServerName()</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.ServerNameSetString">
+            <summary>Sets the shim of Client.set_ServerName(String value)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.ServerPortGet">
+            <summary>Sets the shim of Client.get_ServerPort()</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.ServerPortSetInt32">
+            <summary>Sets the shim of Client.set_ServerPort(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.AllInstances.UnregisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.ShimClient.ShimLoginException">
+            <summary>Shim type of DevChallenge.Client+LoginException</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimLoginException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimLoginException.#ctor(DevChallenge.Client.LoginException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimLoginException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimLoginException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimLoginException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ShimLoginException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ShimLoginException.ConstructorString">
+            <summary>Sets the shim of LoginException.LoginException(String msg)</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.ShimClient.ShimLoginException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.ShimClient.ShimRegisterUserException">
+            <summary>Shim type of DevChallenge.Client+RegisterUserException</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.#ctor(DevChallenge.Client.RegisterUserException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.ConstructorString">
+            <summary>Sets the shim of RegisterUserException.RegisterUserException(String msg)</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.ShimClient.ShimRegisterUserException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException">
+            <summary>Shim type of DevChallenge.Client+UninitializedClientException</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.#ctor(DevChallenge.Client.UninitializedClientException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.Constructor">
+            <summary>Sets the shim of UninitializedClientException.UninitializedClientException()</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.ShimClient.ShimUninitializedClientException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
         <member name="T:DevChallenge.Fakes.ShimClosedException">
             <summary>Shim type of DevChallenge.ClosedException</summary>
         </member>
@@ -135,6 +963,24 @@
         </member>
         <member name="T:DevChallenge.Fakes.ShimInvalidMessageTypeException.AllInstances">
             <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:DevChallenge.Fakes.StubClient">
+            <summary>Stub type of DevChallenge.Client</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.StubClient.#ctor(System.String,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DevChallenge.Fakes.StubClient.InitializeStub">
+            <summary>Initializes a new instance of type StubClient</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.StubClient.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.StubClient.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DevChallenge.Fakes.StubClient.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:DevChallenge.Fakes.StubClosedException">
             <summary>Stub type of DevChallenge.ClosedException</summary>
@@ -732,852 +1578,6 @@
         </member>
         <member name="P:DevChallenge.Fakes.StubInvalidMessageTypeException.StackTrace">
             <summary>Sets the stub of Exception.get_StackTrace()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection">
-            <summary>Shim type of DevChallenge.Implementation.AbstractConnection</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.#ctor(DevChallenge.Implementation.AbstractConnection)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.Bind(DevChallenge.IConnection)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.Bind(System.IDisposable)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.Constructor">
-            <summary>Sets the shim of AbstractConnection.AbstractConnection()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.CreateNotificationXElement">
-            <summary>Sets the shim of AbstractConnection.CreateNotification(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.CreateRequestXElement">
-            <summary>Sets the shim of AbstractConnection.CreateRequest(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.CreateResponseXElementString">
-            <summary>Sets the shim of AbstractConnection.CreateResponse(XElement message, String requestid)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.DispatchMessageXElement">
-            <summary>Sets the shim of AbstractConnection.DispatchMessage(XElement msg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.Dispose">
-            <summary>Sets the shim of AbstractConnection.Dispose()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.Exec">
-            <summary>Sets the shim of AbstractConnection.Exec()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ExecTimeSpan">
-            <summary>Sets the shim of AbstractConnection.Exec(TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ExecWhileFuncOfBoolean">
-            <summary>Sets the shim of AbstractConnection.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ExecWhileFuncOfBooleanTimeSpan">
-            <summary>Sets the shim of AbstractConnection.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.GetNotificationXElement">
-            <summary>Sets the shim of AbstractConnection.GetNotification(XElement rawmsg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.GetRequestXElement">
-            <summary>Sets the shim of AbstractConnection.GetRequest(XElement rawmsg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.GetResponseXElement">
-            <summary>Sets the shim of AbstractConnection.GetResponse(XElement rawmsg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.PostRequestXElement">
-            <summary>Sets the shim of AbstractConnection.PostRequest(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.RegisterFilterFuncOfXElementFilterResponse">
-            <summary>Sets the shim of AbstractConnection.RegisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.RegisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of AbstractConnection.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.RunUntilClosed">
-            <summary>Sets the shim of AbstractConnection.RunUntilClosed()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.SendNotificationXElement">
-            <summary>Sets the shim of AbstractConnection.SendNotification(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.SendRequestXElement">
-            <summary>Sets the shim of AbstractConnection.SendRequest(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.SendRequestXElementTimeSpan">
-            <summary>Sets the shim of AbstractConnection.SendRequest(XElement message, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.SendResponseXElementString">
-            <summary>Sets the shim of AbstractConnection.SendResponse(XElement response, String requestid)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.SendXElement">
-            <summary>Sets the shim of AbstractConnection.Send(XElement e)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.StartCollector">
-            <summary>Sets the shim of AbstractConnection.StartCollector()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.UnregisterFilterFuncOfXElementFilterResponse">
-            <summary>Sets the shim of AbstractConnection.UnregisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.UnregisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of AbstractConnection.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitForNotificationFuncOfINotificationFilterResponse">
-            <summary>Sets the shim of AbstractConnection.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitForNotificationFuncOfINotificationFilterResponseTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitForRequestFuncOfIRequestFilterResponse">
-            <summary>Sets the shim of AbstractConnection.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitForRequestFuncOfIRequestFilterResponseTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitUntilEventWaitHandle">
-            <summary>Sets the shim of AbstractConnection.WaitUntil(EventWaitHandle handle)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitUntilEventWaitHandleTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitUntil(EventWaitHandle handle, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitUntilFilterMatchFuncOfXElementFilterResponse">
-            <summary>Sets the shim of AbstractConnection.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.WaitUntilFilterMatchFuncOfXElementFilterResponseTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter, TimeSpan timeout)</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.CreateNotificationXElement">
-            <summary>Sets the shim of AbstractConnection.CreateNotification(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.CreateRequestXElement">
-            <summary>Sets the shim of AbstractConnection.CreateRequest(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.CreateResponseXElementString">
-            <summary>Sets the shim of AbstractConnection.CreateResponse(XElement message, String requestid)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.DispatchMessageXElement">
-            <summary>Sets the shim of AbstractConnection.DispatchMessage(XElement msg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.Dispose">
-            <summary>Sets the shim of AbstractConnection.Dispose()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.Exec">
-            <summary>Sets the shim of AbstractConnection.Exec()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.ExecTimeSpan">
-            <summary>Sets the shim of AbstractConnection.Exec(TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.ExecWhileFuncOfBoolean">
-            <summary>Sets the shim of AbstractConnection.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.ExecWhileFuncOfBooleanTimeSpan">
-            <summary>Sets the shim of AbstractConnection.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.GetNotificationXElement">
-            <summary>Sets the shim of AbstractConnection.GetNotification(XElement rawmsg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.GetRequestXElement">
-            <summary>Sets the shim of AbstractConnection.GetRequest(XElement rawmsg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.GetResponseXElement">
-            <summary>Sets the shim of AbstractConnection.GetResponse(XElement rawmsg)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.PostRequestXElement">
-            <summary>Sets the shim of AbstractConnection.PostRequest(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.RegisterFilterFuncOfXElementFilterResponse">
-            <summary>Sets the shim of AbstractConnection.RegisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.RegisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of AbstractConnection.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.RunUntilClosed">
-            <summary>Sets the shim of AbstractConnection.RunUntilClosed()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.SendNotificationXElement">
-            <summary>Sets the shim of AbstractConnection.SendNotification(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.SendRequestXElement">
-            <summary>Sets the shim of AbstractConnection.SendRequest(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.SendRequestXElementTimeSpan">
-            <summary>Sets the shim of AbstractConnection.SendRequest(XElement message, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.SendResponseXElementString">
-            <summary>Sets the shim of AbstractConnection.SendResponse(XElement response, String requestid)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.SendXElement">
-            <summary>Sets the shim of AbstractConnection.Send(XElement e)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.StartCollector">
-            <summary>Sets the shim of AbstractConnection.StartCollector()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.UnregisterFilterFuncOfXElementFilterResponse">
-            <summary>Sets the shim of AbstractConnection.UnregisterFilter(Func`2&lt;XElement,FilterResponse&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.UnregisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of AbstractConnection.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitForNotificationFuncOfINotificationFilterResponse">
-            <summary>Sets the shim of AbstractConnection.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitForNotificationFuncOfINotificationFilterResponseTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitForNotification(Func`2&lt;INotification,FilterResponse&gt; filter, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitForRequestFuncOfIRequestFilterResponse">
-            <summary>Sets the shim of AbstractConnection.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitForRequestFuncOfIRequestFilterResponseTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitForRequest(Func`2&lt;IRequest,FilterResponse&gt; filter, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitUntilEventWaitHandle">
-            <summary>Sets the shim of AbstractConnection.WaitUntil(EventWaitHandle handle)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitUntilEventWaitHandleTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitUntil(EventWaitHandle handle, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitUntilFilterMatchFuncOfXElementFilterResponse">
-            <summary>Sets the shim of AbstractConnection.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.AllInstances.WaitUntilFilterMatchFuncOfXElementFilterResponseTimeSpan">
-            <summary>Sets the shim of AbstractConnection.WaitUntilFilterMatch(Func`2&lt;XElement,FilterResponse&gt; filter, TimeSpan timeout)</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector">
-            <summary>Shim type of DevChallenge.Implementation.AbstractConnection+Collector</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.#ctor(DevChallenge.Implementation.AbstractConnection.Collector)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.Bind(DevChallenge.Implementation.AbstractConnection.IRunLoopSource)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.CollectorTaskGet">
-            <summary>Sets the shim of Collector.get_CollectorTask()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.CollectorTaskSetTask">
-            <summary>Sets the shim of Collector.set_CollectorTask(Task value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.ConstructorFuncOfIEnumerableOfXElement">
-            <summary>Sets the shim of Collector.Collector(Func`1&lt;IEnumerable`1&lt;XElement&gt;&gt; itempoolfunc)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.GetItem">
-            <summary>Sets the shim of Collector.GetItem()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.GetItemTimeSpan">
-            <summary>Sets the shim of Collector.GetItem(TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.HasAvailableItemGet">
-            <summary>Sets the shim of Collector.get_HasAvailableItem()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.IsRunningGet">
-            <summary>Sets the shim of Collector.get_IsRunning()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.Start">
-            <summary>Sets the shim of Collector.Start()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector._Startb__21">
-            <summary>Sets the shim of Collector.&lt;Start&gt;b__21()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances.CollectorTaskGet">
-            <summary>Sets the shim of Collector.get_CollectorTask()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances.CollectorTaskSetTask">
-            <summary>Sets the shim of Collector.set_CollectorTask(Task value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances.GetItem">
-            <summary>Sets the shim of Collector.GetItem()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances.GetItemTimeSpan">
-            <summary>Sets the shim of Collector.GetItem(TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances.HasAvailableItemGet">
-            <summary>Sets the shim of Collector.get_HasAvailableItem()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances.IsRunningGet">
-            <summary>Sets the shim of Collector.get_IsRunning()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances.Start">
-            <summary>Sets the shim of Collector.Start()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimCollector.AllInstances._Startb__21">
-            <summary>Sets the shim of Collector.&lt;Start&gt;b__21()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification">
-            <summary>Shim type of DevChallenge.Implementation.AbstractConnection+Notification</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.#ctor(DevChallenge.Implementation.AbstractConnection.Notification)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.Bind(DevChallenge.INotification)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.ConstructorXElement">
-            <summary>Sets the shim of Notification.Notification(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.GetXElement">
-            <summary>Sets the shim of Notification.Get(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.MessageGet">
-            <summary>Sets the shim of Notification.get_Message()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.MessageSetXElement">
-            <summary>Sets the shim of Notification.set_Message(XElement value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.SerializedGet">
-            <summary>Sets the shim of Notification.get_Serialized()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.AllInstances.MessageGet">
-            <summary>Sets the shim of Notification.get_Message()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.AllInstances.MessageSetXElement">
-            <summary>Sets the shim of Notification.set_Message(XElement value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimNotification.AllInstances.SerializedGet">
-            <summary>Sets the shim of Notification.get_Serialized()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest">
-            <summary>Shim type of DevChallenge.Implementation.AbstractConnection+Request</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.#ctor(DevChallenge.Implementation.AbstractConnection.Request)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.Bind(DevChallenge.IRequest)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.ConstructorXElement">
-            <summary>Sets the shim of Request.Request(XElement message)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.ConstructorXElementString">
-            <summary>Sets the shim of Request.Request(XElement message, String requestid)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.GetXElement">
-            <summary>Sets the shim of Request.Get(XElement serialized)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.MessageGet">
-            <summary>Sets the shim of Request.get_Message()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.MessageSetXElement">
-            <summary>Sets the shim of Request.set_Message(XElement value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.NextRequestId">
-            <summary>Sets the shim of Request.NextRequestId()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.RequestIdGet">
-            <summary>Sets the shim of Request.get_RequestId()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.RequestIdSetString">
-            <summary>Sets the shim of Request.set_RequestId(String value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.SerializedGet">
-            <summary>Sets the shim of Request.get_Serialized()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.StaticConstructor">
-            <summary>Sets the shim of Request.Request()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.AllInstances.MessageGet">
-            <summary>Sets the shim of Request.get_Message()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.AllInstances.MessageSetXElement">
-            <summary>Sets the shim of Request.set_Message(XElement value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.AllInstances.RequestIdGet">
-            <summary>Sets the shim of Request.get_RequestId()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.AllInstances.RequestIdSetString">
-            <summary>Sets the shim of Request.set_RequestId(String value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRequest.AllInstances.SerializedGet">
-            <summary>Sets the shim of Request.get_Serialized()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse">
-            <summary>Shim type of DevChallenge.Implementation.AbstractConnection+Response</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.#ctor(DevChallenge.Implementation.AbstractConnection.Response)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.Bind(DevChallenge.IResponse)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.ConstructorXElementString">
-            <summary>Sets the shim of Response.Response(XElement message, String requestid)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.GetXElement">
-            <summary>Sets the shim of Response.Get(XElement serialized)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.GetXElementString">
-            <summary>Sets the shim of Response.Get(XElement serialized, String requestid)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.MessageGet">
-            <summary>Sets the shim of Response.get_Message()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.MessageSetXElement">
-            <summary>Sets the shim of Response.set_Message(XElement value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.RequestIdGet">
-            <summary>Sets the shim of Response.get_RequestId()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.RequestIdSetString">
-            <summary>Sets the shim of Response.set_RequestId(String value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.SerializedGet">
-            <summary>Sets the shim of Response.get_Serialized()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.AllInstances.MessageGet">
-            <summary>Sets the shim of Response.get_Message()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.AllInstances.MessageSetXElement">
-            <summary>Sets the shim of Response.set_Message(XElement value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.AllInstances.RequestIdGet">
-            <summary>Sets the shim of Response.get_RequestId()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.AllInstances.RequestIdSetString">
-            <summary>Sets the shim of Response.set_RequestId(String value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimResponse.AllInstances.SerializedGet">
-            <summary>Sets the shim of Response.get_Serialized()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop">
-            <summary>Shim type of DevChallenge.Implementation.AbstractConnection+RunLoop</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.#ctor(DevChallenge.Implementation.AbstractConnection.RunLoop)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.ConstructorAbstractConnectionIRunLoopSourceActionOfXElement">
-            <summary>Sets the shim of RunLoop.RunLoop(IRunLoopSource source, Action`1&lt;XElement&gt; onnewitem)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.Exec">
-            <summary>Sets the shim of RunLoop.Exec()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.ExecThreadGet">
-            <summary>Sets the shim of RunLoop.get_ExecThread()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.ExecTimeSpan">
-            <summary>Sets the shim of RunLoop.Exec(TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.ExecWhileFuncOfBoolean">
-            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.ExecWhileFuncOfBooleanTimeSpan">
-            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop._Execb__23">
-            <summary>Sets the shim of RunLoop.&lt;Exec&gt;b__23()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.AllInstances.Exec">
-            <summary>Sets the shim of RunLoop.Exec()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.AllInstances.ExecThreadGet">
-            <summary>Sets the shim of RunLoop.get_ExecThread()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.AllInstances.ExecTimeSpan">
-            <summary>Sets the shim of RunLoop.Exec(TimeSpan timeout)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.AllInstances.ExecWhileFuncOfBoolean">
-            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimAbstractConnection.ShimRunLoop.AllInstances.ExecWhileFuncOfBooleanTimeSpan">
-            <summary>Sets the shim of RunLoop.ExecWhile(Func`1&lt;Boolean&gt; condition, TimeSpan timeout)</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient">
-            <summary>Shim type of DevChallenge.Implementation.Client</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.#ctor(DevChallenge.Implementation.Client)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.Bind(DevChallenge.IClient)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ApplyMonitorsIConnection">
-            <summary>Sets the shim of Client.ApplyMonitors(IConnection conn)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ConstructorStringInt32">
-            <summary>Sets the shim of Client.Client(String servername, Int32 port)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.LoginStringStringStringInt32">
-            <summary>Sets the shim of Client.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.RegisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of Client.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.RegisterUserStringStringStringString">
-            <summary>Sets the shim of Client.RegisterUser(String username, String password, String fullname, String email)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ServerNameGet">
-            <summary>Sets the shim of Client.get_ServerName()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ServerNameSetString">
-            <summary>Sets the shim of Client.set_ServerName(String value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ServerPortGet">
-            <summary>Sets the shim of Client.get_ServerPort()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ServerPortSetInt32">
-            <summary>Sets the shim of Client.set_ServerPort(Int32 value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.StaticConstructor">
-            <summary>Sets the shim of Client.Client()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.UnregisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of Client.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient._Loginb__0INotification">
-            <summary>Sets the shim of Client.&lt;Login&gt;b__0(INotification notification)</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ApplyMonitorsIConnection">
-            <summary>Sets the shim of Client.ApplyMonitors(IConnection conn)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.LoginStringStringStringInt32">
-            <summary>Sets the shim of Client.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.RegisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of Client.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.RegisterUserStringStringStringString">
-            <summary>Sets the shim of Client.RegisterUser(String username, String password, String fullname, String email)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ServerNameGet">
-            <summary>Sets the shim of Client.get_ServerName()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ServerNameSetString">
-            <summary>Sets the shim of Client.set_ServerName(String value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ServerPortGet">
-            <summary>Sets the shim of Client.get_ServerPort()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ServerPortSetInt32">
-            <summary>Sets the shim of Client.set_ServerPort(Int32 value)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.UnregisterMonitorActionOfXElementMessageDirection">
-            <summary>Sets the shim of Client.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException">
-            <summary>Shim type of DevChallenge.Implementation.Client+LoginException</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.#ctor(DevChallenge.Implementation.Client.LoginException)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.Bind(System.Runtime.Serialization.ISerializable)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.ConstructorString">
-            <summary>Sets the shim of LoginException.LoginException(String msg)</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException">
-            <summary>Shim type of DevChallenge.Implementation.Client+RegisterUserException</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.#ctor(DevChallenge.Implementation.Client.RegisterUserException)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.Bind(System.Runtime.Serialization.ISerializable)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.ConstructorString">
-            <summary>Sets the shim of RegisterUserException.RegisterUserException(String msg)</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient.ShimRegisterUserException.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException">
-            <summary>Shim type of DevChallenge.Implementation.Client+UninitializedClientException</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.#ctor(DevChallenge.Implementation.Client.UninitializedClientException)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.Bind(System.Runtime.Serialization.ISerializable)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.Constructor">
-            <summary>Sets the shim of UninitializedClientException.UninitializedClientException()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimClient.ShimUninitializedClientException.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimTcpConnection">
-            <summary>Shim type of DevChallenge.Implementation.TcpConnection</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimTcpConnection.#ctor">
-            <summary>Initializes a new shim instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimTcpConnection.#ctor(DevChallenge.Implementation.TcpConnection)">
-            <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimTcpConnection.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimTcpConnection.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimTcpConnection.Bind(DevChallenge.IConnection)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimTcpConnection.Bind(DevChallenge.ITcpConnection)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.ShimTcpConnection.Bind(System.IDisposable)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.Close">
-            <summary>Sets the shim of TcpConnection.Close()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.ConstructorTcpClient">
-            <summary>Sets the shim of TcpConnection.TcpConnection(TcpClient c)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.ReadXmlItems">
-            <summary>Sets the shim of TcpConnection.ReadXmlItems()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.SendXmlItemXElement">
-            <summary>Sets the shim of TcpConnection.SendXmlItem(XElement e)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.TcpClientGet">
-            <summary>Sets the shim of TcpConnection.get_TcpClient()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.ShimTcpConnection.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.AllInstances.Close">
-            <summary>Sets the shim of TcpConnection.Close()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.AllInstances.ReadXmlItems">
-            <summary>Sets the shim of TcpConnection.ReadXmlItems()</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.AllInstances.SendXmlItemXElement">
-            <summary>Sets the shim of TcpConnection.SendXmlItem(XElement e)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimTcpConnection.AllInstances.TcpClientGet">
-            <summary>Sets the shim of TcpConnection.get_TcpClient()</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.StubAbstractConnection">
-            <summary>Stub type of DevChallenge.Implementation.AbstractConnection</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubAbstractConnection.#ctor">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubAbstractConnection.Close">
-            <summary>Sets the stub of AbstractConnection.Close()</summary>
-        </member>
-        <member name="F:DevChallenge.Implementation.Fakes.StubAbstractConnection.Close01">
-            <summary>Sets the stub of AbstractConnection.Close()</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubAbstractConnection.InitializeStub">
-            <summary>Initializes a new instance of type StubAbstractConnection</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubAbstractConnection.ReadXmlItems">
-            <summary>Sets the stub of AbstractConnection.ReadXmlItems()</summary>
-        </member>
-        <member name="F:DevChallenge.Implementation.Fakes.StubAbstractConnection.ReadXmlItems01">
-            <summary>Sets the stub of AbstractConnection.ReadXmlItems()</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubAbstractConnection.SendXmlItem(System.Xml.Linq.XElement)">
-            <summary>Sets the stub of AbstractConnection.SendXmlItem(XElement e)</summary>
-        </member>
-        <member name="F:DevChallenge.Implementation.Fakes.StubAbstractConnection.SendXmlItemXElement">
-            <summary>Sets the stub of AbstractConnection.SendXmlItem(XElement e)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubAbstractConnection.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubAbstractConnection.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubAbstractConnection.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.StubClient">
-            <summary>Stub type of DevChallenge.Implementation.Client</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubClient.#ctor(System.String,System.Int32)">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubClient.InitializeStub">
-            <summary>Initializes a new instance of type StubClient</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubClient.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubClient.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubClient.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
-        </member>
-        <member name="T:DevChallenge.Implementation.Fakes.StubTcpConnection">
-            <summary>Stub type of DevChallenge.Implementation.TcpConnection</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubTcpConnection.#ctor(System.Net.Sockets.TcpClient)">
-            <summary>Initializes a new instance</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubTcpConnection.Close">
-            <summary>Sets the stub of TcpConnection.Close()</summary>
-        </member>
-        <member name="F:DevChallenge.Implementation.Fakes.StubTcpConnection.Close01">
-            <summary>Sets the stub of TcpConnection.Close()</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubTcpConnection.InitializeStub">
-            <summary>Initializes a new instance of type StubTcpConnection</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubTcpConnection.ReadXmlItems">
-            <summary>Sets the stub of TcpConnection.ReadXmlItems()</summary>
-        </member>
-        <member name="F:DevChallenge.Implementation.Fakes.StubTcpConnection.ReadXmlItems01">
-            <summary>Sets the stub of TcpConnection.ReadXmlItems()</summary>
-        </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubTcpConnection.SendXmlItem(System.Xml.Linq.XElement)">
-            <summary>Sets the stub of TcpConnection.SendXmlItem(XElement e)</summary>
-        </member>
-        <member name="F:DevChallenge.Implementation.Fakes.StubTcpConnection.SendXmlItemXElement">
-            <summary>Sets the stub of TcpConnection.SendXmlItem(XElement e)</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubTcpConnection.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubTcpConnection.InstanceBehavior">
-            <summary>Gets or sets the instance behavior.</summary>
-        </member>
-        <member name="P:DevChallenge.Implementation.Fakes.StubTcpConnection.InstanceObserver">
-            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:DevChallenge.Util.Fakes.ShimAsyncQueue`1">
             <summary>Shim type of DevChallenge.Util.AsyncQueue`1</summary>

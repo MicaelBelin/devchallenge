@@ -12,13 +12,13 @@ namespace Test_DevChallenge
 
         IEnumerable<XElement> testpool()
         {
-            yield return new DevChallenge.Implementation.TcpConnection.Notification(new XElement("notification1")).Serialized;
-            yield return new DevChallenge.Implementation.TcpConnection.Notification(new XElement("notification2")).Serialized;
+            yield return new DevChallenge.Connection.Tcp.Notification(new XElement("notification1")).Serialized;
+            yield return new DevChallenge.Connection.Tcp.Notification(new XElement("notification2")).Serialized;
         }
         IEnumerable<XElement> testpoolwithhold()
         {
-            yield return new DevChallenge.Implementation.TcpConnection.Notification(new XElement("notification1")).Serialized;
-            yield return new DevChallenge.Implementation.TcpConnection.Notification(new XElement("notification2")).Serialized;
+            yield return new DevChallenge.Connection.Tcp.Notification(new XElement("notification1")).Serialized;
+            yield return new DevChallenge.Connection.Tcp.Notification(new XElement("notification2")).Serialized;
             Thread.Sleep(-1);
         }
         IEnumerable<XElement> emptypool()
@@ -29,19 +29,19 @@ namespace Test_DevChallenge
         [TestMethod]
         public void GetItem()
         {
-            var collector = new DevChallenge.Implementation.AbstractConnection.Collector(testpool);
+            var collector = new DevChallenge.Connection.Abstract.Collector(testpool);
 
             collector.Start();
 
-            Assert.AreEqual("notification1", DevChallenge.Implementation.TcpConnection.Notification.Get(collector.GetItem()).Message.Name);
-            Assert.AreEqual("notification2", DevChallenge.Implementation.TcpConnection.Notification.Get(collector.GetItem()).Message.Name);
+            Assert.AreEqual("notification1", DevChallenge.Connection.Tcp.Notification.Get(collector.GetItem()).Message.Name);
+            Assert.AreEqual("notification2", DevChallenge.Connection.Tcp.Notification.Get(collector.GetItem()).Message.Name);
         }
 
         [TestMethod]
         [ExpectedException(typeof(DevChallenge.ClosedException))]
         public void GetItemWithoutStarting()
         {
-            var collector = new DevChallenge.Implementation.AbstractConnection.Collector(testpool);
+            var collector = new DevChallenge.Connection.Abstract.Collector(testpool);
 
             collector.GetItem();
         }
@@ -50,12 +50,12 @@ namespace Test_DevChallenge
         [ExpectedException(typeof(TimeoutException))]
         public void GetItem_with_delay()
         {
-            var collector = new DevChallenge.Implementation.AbstractConnection.Collector(testpoolwithhold);
+            var collector = new DevChallenge.Connection.Abstract.Collector(testpoolwithhold);
 
             collector.Start();
 
-            Assert.AreEqual("notification1", DevChallenge.Implementation.TcpConnection.Notification.Get(collector.GetItem()).Message.Name);
-            Assert.AreEqual("notification2", DevChallenge.Implementation.TcpConnection.Notification.Get(collector.GetItem()).Message.Name);
+            Assert.AreEqual("notification1", DevChallenge.Connection.Tcp.Notification.Get(collector.GetItem()).Message.Name);
+            Assert.AreEqual("notification2", DevChallenge.Connection.Tcp.Notification.Get(collector.GetItem()).Message.Name);
 
             collector.GetItem(TimeSpan.FromMilliseconds(100));
         }
@@ -65,7 +65,7 @@ namespace Test_DevChallenge
         [TestMethod]
         public void IsRunning()
         {
-            var collector = new DevChallenge.Implementation.AbstractConnection.Collector(testpool);
+            var collector = new DevChallenge.Connection.Abstract.Collector(testpool);
             Assert.AreEqual(false, collector.IsRunning);
 
             collector.Start();
@@ -82,7 +82,7 @@ namespace Test_DevChallenge
         [ExpectedException(typeof(DevChallenge.ClosedException))]
         public void TestExceedingGetItem()
         {
-            var collector = new DevChallenge.Implementation.AbstractConnection.Collector(testpool);
+            var collector = new DevChallenge.Connection.Abstract.Collector(testpool);
             Assert.AreEqual(false, collector.IsRunning);
             collector.Start();
             try
@@ -102,7 +102,7 @@ namespace Test_DevChallenge
         [ExpectedException(typeof(InvalidOperationException),"Collector is already started")]
         public void StartingCollectorTwice()
         {
-            var collector = new DevChallenge.Implementation.AbstractConnection.Collector(testpool);
+            var collector = new DevChallenge.Connection.Abstract.Collector(testpool);
             collector.Start();
             collector.Start();
         }

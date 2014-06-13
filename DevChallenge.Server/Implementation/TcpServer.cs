@@ -41,7 +41,7 @@ namespace DevChallenge.Server.Implementation
         {
             try
             {
-                var connection = new DevChallenge.Implementation.TcpConnection(client);
+                var connection = new DevChallenge.Connection.Tcp(client);
                 var usermanager = new UserManager(new db.DevChallengeDataContext(connectionstring));
                 usermanager.RegisterUserCommands(connection);
 

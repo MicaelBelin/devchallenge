@@ -6,12 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DevChallenge.Implementation
+namespace DevChallenge.Connection
 {
-    public class TcpConnection : AbstractConnection, ITcpConnection
+    public class Tcp : Abstract, ITcpConnection
     {
 
-        public TcpConnection(TcpClient c)
+        public Tcp(TcpClient c)
         {
             client = c;
             stream = client.GetStream();
