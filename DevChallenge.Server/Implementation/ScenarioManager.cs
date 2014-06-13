@@ -149,7 +149,7 @@ namespace DevChallenge.Server.Implementation
             var connection = agent.Connection;
 
             eventlog.Add(EventLogType.Message, String.Format("Agent added: \"{0}\"", agent.Name));
-            eventlog.Add(EventLogType.Message, String.Format("Owner: {0}({1}{2})", agent.Owner.UserName, agent.Owner.FullName, agent.Owner.Email));
+            eventlog.Add(EventLogType.Message, String.Format("Owner: {0} ({1} {2})", agent.Owner.UserName, agent.Owner.FullName, agent.Owner.Email));
 
             var response = agent.Connection.SendRequest(new XElement("scenario.select",
                 new XElement("scenarios",
@@ -170,6 +170,7 @@ namespace DevChallenge.Server.Implementation
             {
                 eventlog.Add(EventLogType.Message, string.Format("Agent \"{0}\" selected scenario: \"{1}\"", agent.Name, scenarioname));
                 scenario.AddAgent(agent, response);
+                eventlog.Add(EventLogType.Message, string.Format("Agent \"{0}\" closed connection", agent.Name, scenarioname));
             }
 
 

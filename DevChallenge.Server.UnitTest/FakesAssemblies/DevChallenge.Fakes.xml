@@ -226,11 +226,20 @@
         <member name="M:DevChallenge.Fakes.StubIClient.dc::DevChallenge#IClient#Login(System.String,System.String,System.String,System.Int32)">
             <summary>Sets the stub of IClient.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
         </member>
+        <member name="M:DevChallenge.Fakes.StubIClient.dc::DevChallenge#IClient#RegisterMonitor(System.Action{System.Xml.Linq.XElement,DevChallenge.MessageDirection})">
+            <summary>Sets the stub of IClient.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
         <member name="M:DevChallenge.Fakes.StubIClient.dc::DevChallenge#IClient#RegisterUser(System.String,System.String,System.String,System.String)">
             <summary>Sets the stub of IClient.RegisterUser(String username, String password, String fullname, String email)</summary>
         </member>
+        <member name="M:DevChallenge.Fakes.StubIClient.dc::DevChallenge#IClient#UnregisterMonitor(System.Action{System.Xml.Linq.XElement,DevChallenge.MessageDirection})">
+            <summary>Sets the stub of IClient.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
         <member name="F:DevChallenge.Fakes.StubIClient.LoginStringStringStringInt32">
             <summary>Sets the stub of IClient.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
+        </member>
+        <member name="F:DevChallenge.Fakes.StubIClient.RegisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the stub of IClient.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
         </member>
         <member name="F:DevChallenge.Fakes.StubIClient.RegisterUserStringStringStringString">
             <summary>Sets the stub of IClient.RegisterUser(String username, String password, String fullname, String email)</summary>
@@ -240,6 +249,9 @@
         </member>
         <member name="F:DevChallenge.Fakes.StubIClient.ServerPortGet">
             <summary>Sets the stub of IClient.get_ServerPort()</summary>
+        </member>
+        <member name="F:DevChallenge.Fakes.StubIClient.UnregisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the stub of IClient.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
         </member>
         <member name="P:DevChallenge.Fakes.StubIClient.dc::DevChallenge#IClient#ServerName">
             <summary>Sets the stub of IClient.get_ServerName()</summary>
@@ -1270,17 +1282,23 @@
         <member name="M:DevChallenge.Implementation.Fakes.ShimClient.Bind(DevChallenge.IClient)">
             <summary>Binds the members of the interface to the shim.</summary>
         </member>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ApplyMonitorsIConnection">
+            <summary>Sets the shim of Client.ApplyMonitors(IConnection conn)</summary>
+        </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.Constructor">
-            <summary>Sets the shim of Client.Client()</summary>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ConstructorStringInt32">
+            <summary>Sets the shim of Client.Client(String servername, Int32 port)</summary>
         </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.LoginStringStringStringInt32">
-            <summary>Sets the shim of Client.Login(String username, String pwdigest, String agentname, Int32 agentrevision)</summary>
+            <summary>Sets the shim of Client.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
+        </member>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.RegisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
         </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.RegisterUserStringStringStringString">
-            <summary>Sets the shim of Client.RegisterUser(String username, String pwhash, String fullname, String email)</summary>
+            <summary>Sets the shim of Client.RegisterUser(String username, String password, String fullname, String email)</summary>
         </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.ServerNameGet">
             <summary>Sets the shim of Client.get_ServerName()</summary>
@@ -1297,14 +1315,26 @@
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.StaticConstructor">
             <summary>Sets the shim of Client.Client()</summary>
         </member>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.UnregisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
+        </member>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient._Loginb__0INotification">
+            <summary>Sets the shim of Client.&lt;Login&gt;b__0(INotification notification)</summary>
+        </member>
         <member name="T:DevChallenge.Implementation.Fakes.ShimClient.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ApplyMonitorsIConnection">
+            <summary>Sets the shim of Client.ApplyMonitors(IConnection conn)</summary>
+        </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.LoginStringStringStringInt32">
-            <summary>Sets the shim of Client.Login(String username, String pwdigest, String agentname, Int32 agentrevision)</summary>
+            <summary>Sets the shim of Client.Login(String username, String password, String agentname, Int32 agentrevision)</summary>
+        </member>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.RegisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.RegisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
         </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.RegisterUserStringStringStringString">
-            <summary>Sets the shim of Client.RegisterUser(String username, String pwhash, String fullname, String email)</summary>
+            <summary>Sets the shim of Client.RegisterUser(String username, String password, String fullname, String email)</summary>
         </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ServerNameGet">
             <summary>Sets the shim of Client.get_ServerName()</summary>
@@ -1317,6 +1347,9 @@
         </member>
         <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.ServerPortSetInt32">
             <summary>Sets the shim of Client.set_ServerPort(Int32 value)</summary>
+        </member>
+        <member name="P:DevChallenge.Implementation.Fakes.ShimClient.AllInstances.UnregisterMonitorActionOfXElementMessageDirection">
+            <summary>Sets the shim of Client.UnregisterMonitor(Action`2&lt;XElement,MessageDirection&gt; me)</summary>
         </member>
         <member name="T:DevChallenge.Implementation.Fakes.ShimClient.ShimLoginException">
             <summary>Shim type of DevChallenge.Implementation.Client+LoginException</summary>
@@ -1495,7 +1528,7 @@
         <member name="T:DevChallenge.Implementation.Fakes.StubClient">
             <summary>Stub type of DevChallenge.Implementation.Client</summary>
         </member>
-        <member name="M:DevChallenge.Implementation.Fakes.StubClient.#ctor">
+        <member name="M:DevChallenge.Implementation.Fakes.StubClient.#ctor(System.String,System.Int32)">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="M:DevChallenge.Implementation.Fakes.StubClient.InitializeStub">

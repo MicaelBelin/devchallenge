@@ -78,7 +78,7 @@ namespace DevChallenge.Server.Implementation
                 var newr = new
                 {
                     login = request.Message.Element("login").Value,
-                    digest = request.Message.Element("digest").Value,
+                    password = request.Message.Element("password").Value,
                     fullname = request.Message.Element("fullname").Value,
                     email = request.Message.Element("email").Value,
                 };
@@ -86,7 +86,7 @@ namespace DevChallenge.Server.Implementation
 
                 try
                 {
-                    Create(newr.login, newr.digest, newr.fullname, newr.email);
+                    Create(newr.login, newr.password, newr.fullname, newr.email);
                     connection.SendResponse(new XElement("ok"), request.RequestId);
                 }
                 catch (Exception exception)

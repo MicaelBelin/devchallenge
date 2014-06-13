@@ -59,7 +59,7 @@ namespace DevChallenge.Server.Implementation
                     var criteria = new
                     {
                         login = request.Message.Element("login").Value,
-                        digest = request.Message.Element("digest").Value,
+                        password = request.Message.Element("password").Value,
                         agentname = request.Message.Element("agentname").Value,
                         agentrevision = Convert.ToInt32(request.Message.Element("agentrevision").Value),
                     };
@@ -67,7 +67,7 @@ namespace DevChallenge.Server.Implementation
 
                     try
                     {
-                        IUser user = usermanager.Get(criteria.login,criteria.digest);
+                        IUser user = usermanager.Get(criteria.login,criteria.password);
                         var agent = new Agent(connection,user,criteria.agentname,criteria.agentrevision);
                         connection.SendResponse(new XElement("ok"), request.RequestId);
 

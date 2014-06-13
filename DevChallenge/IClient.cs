@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace DevChallenge
 {
@@ -40,5 +41,10 @@ namespace DevChallenge
         /// <param name="agentrevision"></param>
         /// <returns></returns>
         IConnection Login(string username, string password, string agentname, int agentrevision = 0);
+
+
+        void RegisterMonitor(Action<XElement, MessageDirection> me);
+        void UnregisterMonitor(Action<XElement, MessageDirection> me);
+
     }
 }
