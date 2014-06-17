@@ -17,6 +17,7 @@ namespace DevChallenge.Server.Implementation
             Owner = user;
             Name = name;
             Connection = connection;
+            Revision = revision;
         }
 
 
