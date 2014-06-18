@@ -46,6 +46,8 @@ namespace DevChallenge.Server.Implementation
 
         public IUser Create(string Username, string password, string FullName, string Email)
         {
+            if (String.IsNullOrWhiteSpace(Username)) throw new ArgumentException("Invalid username");
+            if (String.IsNullOrWhiteSpace(password)) throw new ArgumentException("Invalid password - must not be empty or only contain whitespaces");
             if (dbc.Users.Any(x => x.Login == Username))
             {
                 throw new InvalidOperationException("User already exists");

@@ -67,6 +67,8 @@ namespace DevChallenge.Server.Implementation
 
                     try
                     {
+                        if (String.IsNullOrWhiteSpace(criteria.agentname)) throw new ArgumentException("invalid agent name");
+
                         IUser user = usermanager.Get(criteria.login,criteria.password);
                         var agent = new Agent(connection,user,criteria.agentname,criteria.agentrevision);
                         connection.SendResponse(new XElement("ok"), request.RequestId);
