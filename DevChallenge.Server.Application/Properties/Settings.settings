@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ScenarioPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">.</Value>
+      <Value Profile="(Default)">Challenges</Value>
     </Setting>
   </Settings>
 </SettingsFile>

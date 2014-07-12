@@ -25,7 +25,7 @@ namespace DevChallenge.Server.Application.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(".")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Challenges")]
         public string ScenarioPath {
             get {
                 return ((string)(this["ScenarioPath"]));

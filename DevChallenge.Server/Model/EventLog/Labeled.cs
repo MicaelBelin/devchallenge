@@ -19,6 +19,7 @@ namespace DevChallenge.Server.Model.EventLog
 
         public void Add(EventLogType type, string msg)
         {
+            if (Target != null)
             Target.Add(type, String.Format("{0}: {1}",
                 Label,
                 msg));

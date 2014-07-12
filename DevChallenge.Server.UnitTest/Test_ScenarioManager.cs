@@ -24,7 +24,7 @@ namespace Test_DevChallengeServer
 
             var agent = new DevChallenge.Server.Model.Fakes.StubIAgent();
             agent.ConnectionGet = () => connection;
-
+            agent.OwnerGet = () => new DevChallenge.Server.Model.Fakes.StubIUser();
 
             var scenario = new DevChallenge.Server.Model.Fakes.StubIScenario();
             scenario.NameGet = () => "FakeScenario";
@@ -60,6 +60,7 @@ namespace Test_DevChallengeServer
 
             var agent = new DevChallenge.Server.Model.Fakes.StubIAgent();
             agent.ConnectionGet = () => connection;
+            agent.OwnerGet = () => new DevChallenge.Server.Model.Fakes.StubIUser();
 
 
             var scenario = new DevChallenge.Server.Model.Fakes.StubIScenario();

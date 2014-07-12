@@ -52,7 +52,7 @@ namespace Test_DevChallenge
                 ReadXmlItemsDelegate = IndefinateExecQueue
             };
             connection.StartCollector();
-            connection.SendRequest(new XElement("test"), TimeSpan.FromMilliseconds(1));
+            connection.SendRequest(new XElement("test"), TimeSpan.FromMilliseconds(500));
         }
 
         [TestMethod]

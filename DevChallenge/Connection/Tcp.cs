@@ -13,6 +13,7 @@ namespace DevChallenge.Connection
 
         public Tcp(TcpClient c)
         {
+            c.NoDelay = true;
             client = c;
             stream = client.GetStream();
             StartCollector();
