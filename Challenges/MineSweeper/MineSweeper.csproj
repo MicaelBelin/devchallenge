@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D5E1E8E7-D772-45C7-B0AF-D773CC9E63ED}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{D65C37BD-8609-481F-9822-228D6635C23B}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DevChallenge.Server.Application</RootNamespace>
-    <AssemblyName>DevChallenge.Server.Application</AssemblyName>
+    <RootNamespace>DevChallenge.Server.Scenarios.MineSweeper</RootNamespace>
+    <AssemblyName>MineSweeper</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,9 +29,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,36 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ClientFramework.cs" />
+    <Compile Include="Simulation.cs" />
+    <Compile Include="Scenario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Challenges\Fragmentation\Fragmentation.csproj">
-      <Project>{e414962c-2acc-4dd1-b3b4-842653c598cf}</Project>
-      <Name>Fragmentation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Challenges\MineSweeper\MineSweeper.csproj">
-      <Project>{d65c37bd-8609-481f-9822-228d6635c23b}</Project>
-      <Name>MineSweeper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DevChallenge.Server\DevChallenge.Server.csproj">
+    <ProjectReference Include="..\..\DevChallenge.Server\DevChallenge.Server.csproj">
       <Project>{eeabe043-e963-4488-b2aa-693d7ed34666}</Project>
       <Name>DevChallenge.Server</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\DevChallenge\DevChallenge.csproj">
+      <Project>{97a5265a-e050-4bfe-b2ab-84753786f3c9}</Project>
+      <Name>DevChallenge</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

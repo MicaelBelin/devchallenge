@@ -27,6 +27,37 @@ namespace DevChallenge.Server
         Model.EventLog.Labeled eventlog;
 
 
+        public void LoadInternalChallenges()
+        {
+            eventlog.Add(Model.EventLogType.Message, String.Format("Loading internal challenges..."));
+
+
+
+
+            var scenariologfactory = new Implementation.LogManager(new db.DevChallengeDataContext());
+
+            var factories = new List<Model.IScenarioFactory>();
+
+            foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                eventlog.Add(Model.EventLogType.Message, string.Format("Checking for scenarios in {0}", assembly.FullName));
+                var typestoload = assembly.GetTypes().Where(x => x.GetInterfaces().
+                    Contains(typeof(DevChallenge.Server.Model.IScenarioFactory)));
+
+                foreach (var typetoload in typestoload)
+                {
+                    eventlog.Add(Model.EventLogType.Message, string.Format("Loading \"{0}\"", typetoload.FullName));
+                    var factory = (Model.IScenarioFactory)Activator.CreateInstance(typetoload);
+                    var scenario = factory.Create(scenariologfactory);
+                    scenariomanager.AddScenario(scenario);
+                }
+            }
+
+
+
+            eventlog.Add(Model.EventLogType.Message, String.Format("Loading challenges completed"));
+        }
+
         public void LoadChallenges(DirectoryInfo path)
         {
 
@@ -34,6 +65,12 @@ namespace DevChallenge.Server
 
 
             eventlog.Add(Model.EventLogType.Message, String.Format("Load directory: \"{0}\"", path.FullName));
+
+            if (!path.Exists)
+            {
+                eventlog.Add(Model.EventLogType.Error, String.Format("Directory \"{0}\" was not found. Skipping load.", path.FullName));
+                return;
+            }
 
             var files = path.EnumerateFiles().Where(x => x.Extension.ToLower() == ".dll");
 

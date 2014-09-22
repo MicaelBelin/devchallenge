@@ -27,7 +27,11 @@ namespace DevChallenge.Server.Implementation
                 if (Started != null) Started(this);
                 try
                 {
-                    owner.Execute(agent,Log,parameters);
+                    owner.Execute(agent, Log, parameters);
+                }
+                catch (Exception e)
+                {
+                    var msg = e.Message;
                 }
                 finally
                 {
