@@ -151,7 +151,7 @@ namespace DevChallenge.Server.Scenarios.Fragmentation
                                        from targetsize in targetsizes
                                        select new { targetfill, targetsize }))
                 {
-                    foreach (var item in Batch(capacity, 1000, batch.targetfill, batch.targetsize)) yield return item;
+                    foreach (var item in Batch(capacity, 300, batch.targetfill, batch.targetsize)) yield return item;
                 }
 
 
