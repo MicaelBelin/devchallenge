@@ -60,6 +60,7 @@ namespace DevChallenge.Server.Scenarios.Fragmentation
 
         public bool ValidPlacement(int position, int size)
         {
+            if (position < 0 || position + size > Capacity) return false;
             return crates.All(x => x.Key >= position + size || position >= x.Key + x.Value.Size);
         }
 

@@ -48,7 +48,7 @@ namespace DevChallenge.Server.Scenarios.Fragmentation
                 {
                     get
                     {
-                        return new XElement("insert", new XAttribute("id", Crate.Id), new XAttribute("size", Crate.Size));
+                        return new XElement("insertrequest", new XAttribute("id", Crate.Id), new XAttribute("size", Crate.Size));
                     }
                 }
 
@@ -76,7 +76,7 @@ namespace DevChallenge.Server.Scenarios.Fragmentation
                 {
                     get
                     {
-                        return new XElement("remove", new XAttribute("id", Crate.Id));
+                        return new XElement("removerequest", new XAttribute("id", Crate.Id));
                     }
                 }
 
@@ -229,7 +229,7 @@ namespace DevChallenge.Server.Scenarios.Fragmentation
                 }
                 catch (StorageException e)
                 {
-                    agent.Connection.SendNotification(new XElement("Error", e.Message));
+                    agent.Connection.SendNotification(new XElement("error", e.Message));
                 }
 
                 log.Finish(null);

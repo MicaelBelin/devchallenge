@@ -12,7 +12,6 @@ namespace DevChallenge.Server.Application
         static void Main(string[] args)
         {
             var program = new Server.Program(new Model.EventLog.StdOut());
-
             program.LoadChallenges(new DirectoryInfo(Properties.Settings.Default.ScenarioPath));
             program.Run();
         }

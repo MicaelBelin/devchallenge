@@ -28,17 +28,23 @@
         <member name="P:DevChallenge.Server.Fakes.ShimProgram.LoadChallengesDirectoryInfo">
             <summary>Sets the shim of Program.LoadChallenges(DirectoryInfo path)</summary>
         </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.LoadInternalChallenges">
+            <summary>Sets the shim of Program.LoadInternalChallenges()</summary>
+        </member>
         <member name="P:DevChallenge.Server.Fakes.ShimProgram.Run">
             <summary>Sets the shim of Program.Run()</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__0FileInfo">
-            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__0(FileInfo x)</summary>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__2FileInfo">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__2(FileInfo x)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__1Type">
-            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__1(Type x)</summary>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadChallengesb__3Type">
+            <summary>Sets the shim of Program.&lt;LoadChallenges&gt;b__3(Type x)</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram._Runb__4IAgent">
-            <summary>Sets the shim of Program.&lt;Run&gt;b__4(IAgent agent)</summary>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._LoadInternalChallengesb__0Type">
+            <summary>Sets the shim of Program.&lt;LoadInternalChallenges&gt;b__0(Type x)</summary>
+        </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram._Runb__6IAgent">
+            <summary>Sets the shim of Program.&lt;Run&gt;b__6(IAgent agent)</summary>
         </member>
         <member name="T:DevChallenge.Server.Fakes.ShimProgram.AllInstances">
             <summary>Define shims for all instances members</summary>
@@ -46,11 +52,14 @@
         <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances.LoadChallengesDirectoryInfo">
             <summary>Sets the shim of Program.LoadChallenges(DirectoryInfo path)</summary>
         </member>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances.LoadInternalChallenges">
+            <summary>Sets the shim of Program.LoadInternalChallenges()</summary>
+        </member>
         <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances.Run">
             <summary>Sets the shim of Program.Run()</summary>
         </member>
-        <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances._Runb__4IAgent">
-            <summary>Sets the shim of Program.&lt;Run&gt;b__4(IAgent agent)</summary>
+        <member name="P:DevChallenge.Server.Fakes.ShimProgram.AllInstances._Runb__6IAgent">
+            <summary>Sets the shim of Program.&lt;Run&gt;b__6(IAgent agent)</summary>
         </member>
         <member name="T:DevChallenge.Server.Fakes.StubProgram">
             <summary>Stub type of DevChallenge.Server.Program</summary>
